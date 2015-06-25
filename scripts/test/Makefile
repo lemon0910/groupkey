@@ -140,6 +140,54 @@ BitCompressedVectorTester.cc.s:
 	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.s
 .PHONY : BitCompressedVectorTester.cc.s
 
+DictionaryTester.o: DictionaryTester.cc.o
+.PHONY : DictionaryTester.o
+
+# target to build an object file
+DictionaryTester.cc.o:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/DictionaryTester.cc.o
+.PHONY : DictionaryTester.cc.o
+
+DictionaryTester.i: DictionaryTester.cc.i
+.PHONY : DictionaryTester.i
+
+# target to preprocess a source file
+DictionaryTester.cc.i:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/DictionaryTester.cc.i
+.PHONY : DictionaryTester.cc.i
+
+DictionaryTester.s: DictionaryTester.cc.s
+.PHONY : DictionaryTester.s
+
+# target to generate assembly for a file
+DictionaryTester.cc.s:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/DictionaryTester.cc.s
+.PHONY : DictionaryTester.cc.s
+
+IndexOffsetTester.o: IndexOffsetTester.cc.o
+.PHONY : IndexOffsetTester.o
+
+# target to build an object file
+IndexOffsetTester.cc.o:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/IndexOffsetTester.cc.o
+.PHONY : IndexOffsetTester.cc.o
+
+IndexOffsetTester.i: IndexOffsetTester.cc.i
+.PHONY : IndexOffsetTester.i
+
+# target to preprocess a source file
+IndexOffsetTester.cc.i:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/IndexOffsetTester.cc.i
+.PHONY : IndexOffsetTester.cc.i
+
+IndexOffsetTester.s: IndexOffsetTester.cc.s
+.PHONY : IndexOffsetTester.s
+
+# target to generate assembly for a file
+IndexOffsetTester.cc.s:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/IndexOffsetTester.cc.s
+.PHONY : IndexOffsetTester.cc.s
+
 __/src/BitCompressedVector.o: __/src/BitCompressedVector.cc.o
 .PHONY : __/src/BitCompressedVector.o
 
@@ -163,6 +211,30 @@ __/src/BitCompressedVector.s: __/src/BitCompressedVector.cc.s
 __/src/BitCompressedVector.cc.s:
 	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.s
 .PHONY : __/src/BitCompressedVector.cc.s
+
+__/src/IndexOffset.o: __/src/IndexOffset.cc.o
+.PHONY : __/src/IndexOffset.o
+
+# target to build an object file
+__/src/IndexOffset.cc.o:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/__/src/IndexOffset.cc.o
+.PHONY : __/src/IndexOffset.cc.o
+
+__/src/IndexOffset.i: __/src/IndexOffset.cc.i
+.PHONY : __/src/IndexOffset.i
+
+# target to preprocess a source file
+__/src/IndexOffset.cc.i:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/__/src/IndexOffset.cc.i
+.PHONY : __/src/IndexOffset.cc.i
+
+__/src/IndexOffset.s: __/src/IndexOffset.cc.s
+.PHONY : __/src/IndexOffset.s
+
+# target to generate assembly for a file
+__/src/IndexOffset.cc.s:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/__/src/IndexOffset.cc.s
+.PHONY : __/src/IndexOffset.cc.s
 
 __/src/LogStream.o: __/src/LogStream.cc.o
 .PHONY : __/src/LogStream.o
@@ -272,9 +344,18 @@ help:
 	@echo "... BitCompressedVectorTester.o"
 	@echo "... BitCompressedVectorTester.i"
 	@echo "... BitCompressedVectorTester.s"
+	@echo "... DictionaryTester.o"
+	@echo "... DictionaryTester.i"
+	@echo "... DictionaryTester.s"
+	@echo "... IndexOffsetTester.o"
+	@echo "... IndexOffsetTester.i"
+	@echo "... IndexOffsetTester.s"
 	@echo "... __/src/BitCompressedVector.o"
 	@echo "... __/src/BitCompressedVector.i"
 	@echo "... __/src/BitCompressedVector.s"
+	@echo "... __/src/IndexOffset.o"
+	@echo "... __/src/IndexOffset.i"
+	@echo "... __/src/IndexOffset.s"
 	@echo "... __/src/LogStream.o"
 	@echo "... __/src/LogStream.i"
 	@echo "... __/src/LogStream.s"

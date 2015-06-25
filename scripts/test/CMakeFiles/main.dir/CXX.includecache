@@ -262,6 +262,20 @@ vector
 Logging.h
 -
 
+../include/Dictionary.h
+vector
+-
+algorithm
+-
+Logging.h
+-
+
+../include/IndexOffset.h
+stdint.h
+-
+vector
+-
+
 ../include/LogStream.h
 assert.h
 -
@@ -278,20 +292,6 @@ LogStream.h
 Timestamp.h
 -
 
-../include/RWMutex.h
-Logging.h
--
-boost/noncopyable.hpp
--
-assert.h
--
-pthread.h
--
-errno.h
--
-sys/syscall.h
--
-
 ../include/Timestamp.h
 boost/operators.hpp
 -
@@ -302,6 +302,12 @@ string
 BitCompressedVector.h
 -
 algorithm
+-
+
+/home/lin/GroupKey/src/IndexOffset.cc
+Logging.h
+-
+IndexOffset.h
 -
 
 /home/lin/GroupKey/src/LogStream.cc
@@ -358,9 +364,19 @@ gtest/gtest.h
 vector
 -
 
-/home/lin/GroupKey/test/main.cc
+/home/lin/GroupKey/test/DictionaryTester.cc
 gtest/gtest.h
 -
-RWMutex.h
+Dictionary.h
+-
+
+/home/lin/GroupKey/test/IndexOffsetTester.cc
+gtest/gtest.h
+-
+IndexOffset.h
+-
+
+/home/lin/GroupKey/test/main.cc
+gtest/gtest.h
 -
 

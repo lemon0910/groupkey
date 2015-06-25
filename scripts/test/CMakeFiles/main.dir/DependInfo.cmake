@@ -5,7 +5,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/lin/GroupKey/test/BitCompressedVectorTester.cc" "/home/lin/GroupKey/scripts/test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o"
+  "/home/lin/GroupKey/test/DictionaryTester.cc" "/home/lin/GroupKey/scripts/test/CMakeFiles/main.dir/DictionaryTester.cc.o"
+  "/home/lin/GroupKey/test/IndexOffsetTester.cc" "/home/lin/GroupKey/scripts/test/CMakeFiles/main.dir/IndexOffsetTester.cc.o"
   "/home/lin/GroupKey/src/BitCompressedVector.cc" "/home/lin/GroupKey/scripts/test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o"
+  "/home/lin/GroupKey/src/IndexOffset.cc" "/home/lin/GroupKey/scripts/test/CMakeFiles/main.dir/__/src/IndexOffset.cc.o"
   "/home/lin/GroupKey/src/LogStream.cc" "/home/lin/GroupKey/scripts/test/CMakeFiles/main.dir/__/src/LogStream.cc.o"
   "/home/lin/GroupKey/src/Logging.cc" "/home/lin/GroupKey/scripts/test/CMakeFiles/main.dir/__/src/Logging.cc.o"
   "/home/lin/GroupKey/src/Timestamp.cc" "/home/lin/GroupKey/scripts/test/CMakeFiles/main.dir/__/src/Timestamp.cc.o"
