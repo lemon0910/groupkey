@@ -9,6 +9,7 @@ ${SRC_PATH}/src/BitCompressedVector.cc
 ${SRC_PATH}/src/Logging.cc
 ${SRC_PATH}/src/LogStream.cc
 ${SRC_PATH}/src/Timestamp.cc
+${SRC_PATH}/src/IndexOffset.cc
 )
 
 include_directories(${SRC_PATH}/include ../gtest-1.7.0/include)

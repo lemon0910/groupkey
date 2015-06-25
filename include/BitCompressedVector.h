@@ -15,6 +15,7 @@ private:
 
     typedef uint64_t type_name_t;
     typedef uint64_t storage_unit_t;
+    //const uint64_t split_column_capacity; // 100MB is a threashold for one split column
     const static uint64_t bitWidth = sizeof(storage_unit_t) * 8;
 
 public:
@@ -23,6 +24,7 @@ public:
     BitCompressedVector(const BitCompressedVector& other);
     BitCompressedVector& operator=(const BitCompressedVector& other);
     virtual ~BitCompressedVector();
+    bool checkCapacity();
     bool checkSize(uint64_t newRows);//before insertion, check, if resize
     void resize(uint64_t newRows);
     void shrinkSize(uint64_t newRows);

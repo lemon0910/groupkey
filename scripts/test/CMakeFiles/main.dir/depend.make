@@ -62,5 +62,9 @@ test/CMakeFiles/main.dir/main.cc.o: ../../gtest-1.7.0/include/gtest/internal/gte
 test/CMakeFiles/main.dir/main.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-string.h
 test/CMakeFiles/main.dir/main.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-tuple.h
 test/CMakeFiles/main.dir/main.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-type-util.h
+test/CMakeFiles/main.dir/main.cc.o: ../include/LogStream.h
+test/CMakeFiles/main.dir/main.cc.o: ../include/Logging.h
+test/CMakeFiles/main.dir/main.cc.o: ../include/RWMutex.h
+test/CMakeFiles/main.dir/main.cc.o: ../include/Timestamp.h
 test/CMakeFiles/main.dir/main.cc.o: ../test/main.cc
 

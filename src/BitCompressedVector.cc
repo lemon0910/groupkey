@@ -55,6 +55,15 @@ BitCompressedVector::~BitCompressedVector()
 	reset();
 }
 
+bool BitCompressedVector::checkCapacity() //after insertion, check, if split
+{
+    //if(m_size > split_column_capacity)
+    //{
+        //return true;
+    //}
+    return false;
+}
+
 bool BitCompressedVector::checkSize(uint64_t totalRows)
 {
 	if(m_bitForItem * totalRows <= m_size)

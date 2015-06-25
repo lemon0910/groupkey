@@ -262,6 +262,12 @@ vector
 Logging.h
 -
 
+../include/IndexOffset.h
+stdint.h
+-
+vector
+-
+
 ../include/LogStream.h
 assert.h
 -
@@ -288,6 +294,12 @@ string
 BitCompressedVector.h
 -
 algorithm
+-
+
+/home/lin/GroupKey/src/IndexOffset.cc
+Logging.h
+-
+IndexOffset.h
 -
 
 /home/lin/GroupKey/src/LogStream.cc
@@ -342,6 +354,12 @@ BitCompressedVector.h
 gtest/gtest.h
 -
 vector
+-
+
+/home/lin/GroupKey/test/IndexOffsetTester.cc
+gtest/gtest.h
+-
+IndexOffset.h
 -
 
 /home/lin/GroupKey/test/main.cc
