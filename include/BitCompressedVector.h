@@ -32,11 +32,12 @@ public:
     void set(uint64_t rowID, uint64_t value);
     void push_back(uint64_t value);
     uint64_t get(uint64_t rowID);
-    vector<uint64_t> getRange(uint64_t rowIDUpper, uint64_t rowIDLower);
+    std::vector<uint64_t> getRange(uint64_t rowIDUpper, uint64_t rowIDLower);
     uint64_t getSize();
     uint64_t getRows();
     void posShrink(uint64_t pos);
     void print();
+    uint64_t maxValue();
 
 private:
 
@@ -50,7 +51,7 @@ private:
         }
         else
         {
-            LOG_INFO << "BitCompressedVector::allocMemory(uint64_t blockNumber) error";
+            LOG_INFO << "BitCompressedVector::allocMemory(uint64_t " << blockNumber << " error";
             return NULL;
         }
     }

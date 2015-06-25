@@ -1,4 +1,5 @@
 #include <BitCompressedVector.h>
+#include <algorithm>
 
 BitCompressedVector::BitCompressedVector(uint64_t rowCount):m_pData(NULL), m_rowCount(rowCount), m_currentRow(0)
 {
@@ -7,8 +8,8 @@ BitCompressedVector::BitCompressedVector(uint64_t rowCount):m_pData(NULL), m_row
 	    m_bitForItem = log2(m_rowCount);
 		if(m_bitForItem + 7 <= 64)
 			m_bitForItem += 7;
-		m_blockNumber = m_rowCount * m_bitForItem / bitWidth + 1;
-		m_size = m_blockNumber * sizeof(storage_unit_t);
+		m_blockNumber = m_rowCount * m_bitForItem / bitWidth + 10000;
+		m_size = m_blockNumber * sizeof(storage_unit_t) * 8;
 		m_pData = allocMemory(m_blockNumber);
 	}
 	else
@@ -45,6 +46,8 @@ BitCompressedVector& BitCompressedVector::operator=(const BitCompressedVector& o
 	memcpy(newData, other.m_pData, m_blockNumber * sizeof(storage_unit_t));
 	free(m_pData);
 	m_pData = newData;
+
+    return *this;
 }
 
 BitCompressedVector::~BitCompressedVector()
@@ -54,7 +57,7 @@ BitCompressedVector::~BitCompressedVector()
 
 bool BitCompressedVector::checkSize(uint64_t totalRows)
 {
-	if(m_bitForItem * totalRows < m_size)
+	if(m_bitForItem * totalRows <= m_size)
 		return true;
 	else
 		return false;
@@ -69,13 +72,13 @@ void BitCompressedVector::resize(uint64_t totalRows) // keep the old data
 	}
 
 	storage_unit_t* newData;
-	uint64_t blockNumber = totalRows * m_bitForItem / bitWidth + 1;
+	uint64_t blockNumber = totalRows * m_bitForItem / bitWidth + 10000;
 
 	newData = allocMemory(blockNumber);
 	memcpy(newData, m_pData, m_blockNumber * sizeof(storage_unit_t));//old data copy
 	free(m_pData);
 	m_pData = newData;
-	m_size = blockNumber * sizeof(storage_unit_t);
+	m_size = blockNumber * sizeof(storage_unit_t) * 8;
 	m_rowCount = totalRows;
 	m_blockNumber = blockNumber;
 }
@@ -101,11 +104,11 @@ void BitCompressedVector::resetBitForItem(uint64_t value)
 	uint64_t bitForItem = log2(value);
 	if(bitForItem + 7 <= 64)
 		bitForItem += 7;
-	
+
 	storage_unit_t* newData;
-	blockNumber = m_rowCount * bitForItem / bitWidth + 1;
+	uint64_t blockNumber = std::max(m_rowCount, m_currentRow) * bitForItem / bitWidth + 10000;
 	newData = allocMemory(blockNumber);
-	for(uint64_t rowID = 0; rowID <= m_currentRow; ++rowID)
+	for(uint64_t rowID = 0; rowID < m_currentRow; ++rowID)
 	{
 		uint64_t tempvalue = get(rowID);
 		uint64_t offset = (bitForItem * rowID) % bitWidth;;
@@ -119,38 +122,40 @@ void BitCompressedVector::resetBitForItem(uint64_t value)
 		{
 			mask = ~(baseMask << (bitWidth - bitForItem - offset));
 			newData[block] &= mask;
-			newData[block] |= (((storage_unit_t)value & baseMask) << (bitWidth - bitForItem - offset));
+			newData[block] |= (((storage_unit_t)tempvalue & baseMask) << (bitWidth - bitForItem - offset));
 		}
 		else //span 2 blocks
 		{
 			//fisrt block
 			mask = ~(baseMask >> (bitForItem - bounds));
 			newData[block] &= mask;
-			newData[block] |= (((storage_unit_t)value & baseMask) >> (bitForItem - bounds));
+			newData[block] |= (((storage_unit_t)tempvalue & baseMask) >> (bitForItem - bounds));
 
 			//second block
 			mask = ~(baseMask << (bitWidth - bitForItem + bounds));
 			newData[block + 1] &= mask;
-			newData[block + 1] |= (((storage_unit_t)value & baseMask) << (bitWidth - bitForItem + bounds));
+			newData[block + 1] |= (((storage_unit_t)tempvalue & baseMask) << (bitWidth - bitForItem + bounds));
 		}
 	}
-	
+
 	m_bitForItem = bitForItem;
 	m_blockNumber = blockNumber;
-	m_size = m_blockNumber * sizeof(storage_unit_t);
+	m_size = m_blockNumber * sizeof(storage_unit_t) * 8;
+    free(m_pData);
+    m_pData = newData;
 }
 
 void BitCompressedVector::set(uint64_t rowID, uint64_t value)
 {
-	uint64_t maxvalue = (1ull << m_bitForItem) - 1ull;
+	uint64_t maxvalue = maxValue();
 	if(m_bitForItem != 64 && value > maxvalue)
 	{
 		resetBitForItem(value);
 	}
-	
+
 	if(!checkSize(rowID))
 		resize(rowID + 10000);
-	
+
 	uint64_t offset = blockOffset(rowID);
 	uint64_t block = blockPosition(rowID);
 
@@ -187,12 +192,12 @@ void BitCompressedVector::push_back(uint64_t value)
 
 uint64_t BitCompressedVector::get(uint64_t rowID)
 {
-	if(rowID > m_rowCount)
+	if(rowID > m_currentRow)
 	{
 		LOG_INFO << "invalid rowID";
 		return 0;
 	}
-	
+
 	uint64_t result;
 	uint64_t offset = blockOffset(rowID);
 	uint64_t block = blockPosition(rowID);
@@ -218,18 +223,18 @@ uint64_t BitCompressedVector::get(uint64_t rowID)
 	return result;
 }
 
-vector<uint64_t> BitCompressedVector::getRange(uint64_t rowIDUpper, uint64_t rowIDLower)
+std::vector<uint64_t> BitCompressedVector::getRange(uint64_t rowIDUpper, uint64_t rowIDLower)
 {
 
 	if(rowIDUpper > rowIDLower || rowIDUpper < 0 || rowIDLower > m_rowCount)
-		return vector<uint64_t>();
+		return std::vector<uint64_t>();
 
 	else if(rowIDUpper == rowIDLower)
-		return vector<uint64_t>(1, get(rowIDUpper));
+		return std::vector<uint64_t>(1, get(rowIDUpper));
 
 	else
 	{
-		vector<uint64_t> result;
+        std::vector<uint64_t> result;
 
 		for(uint64_t currentRow = rowIDUpper; currentRow <= rowIDLower; currentRow++)
 		{
@@ -245,7 +250,7 @@ uint64_t BitCompressedVector::getSize()
 }
 uint64_t BitCompressedVector::getRows()
 {
-	return m_rowCount;
+	return m_currentRow;
 }
 
 void BitCompressedVector::shrinkSize(uint64_t totalRows) // delete the half of old data
@@ -257,7 +262,7 @@ void BitCompressedVector::shrinkSize(uint64_t totalRows) // delete the half of o
 	memcpy(newData, m_pData, m_blockNumber * sizeof(storage_unit_t));//old half of data's copy
 	free(m_pData);
 	m_pData = newData;
-	m_size = blockNumber * sizeof(storage_unit_t);
+	m_size = blockNumber * sizeof(storage_unit_t) * 8;
 	m_rowCount = totalRows;
 	m_blockNumber = blockNumber;
 }
@@ -272,4 +277,9 @@ void BitCompressedVector::print()
 {
 	for(uint64_t i = 0; i < m_currentRow; i++)
 		LOG_INFO << "BitCompressedVector[" << i << "]: " << get(i);
+}
+
+uint64_t BitCompressedVector::maxValue()
+{
+    return (1ull << m_bitForItem) - 1ull;
 }
