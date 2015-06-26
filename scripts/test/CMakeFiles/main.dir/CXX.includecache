@@ -273,7 +273,7 @@ Logging.h
 ../include/IndexOffset.h
 stdint.h
 -
-vector
+BitCompressedVector.h
 -
 
 ../include/LogStream.h
@@ -368,6 +368,8 @@ vector
 gtest/gtest.h
 -
 Dictionary.h
+-
+string
 -
 
 /home/lin/GroupKey/test/IndexOffsetTester.cc

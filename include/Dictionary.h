@@ -50,7 +50,8 @@ class Dictionary{
 		uint64_t getSurePos(T value)
 		{
 			auto itr = std::upper_bound(m_dicVector.begin(), m_dicVector.end(), value);
-			return distance(m_dicVector.begin(), itr);
+			uint64_t ret = distance(m_dicVector.begin(), itr);
+            return ret - 1;
 		}
 
 		bool ifExist(T value)
@@ -72,7 +73,6 @@ class Dictionary{
 			if(floor < m_dicVector[0])
 				return -1;
 			auto itr = lower_bound(m_dicVector.begin(), m_dicVector.end(), floor);
-			itr--;
 			return distance(m_dicVector.begin(), itr);
 		}
 

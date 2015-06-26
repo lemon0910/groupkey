@@ -70,7 +70,11 @@ test/CMakeFiles/main.dir/IndexOffsetTester.cc.o: ../../gtest-1.7.0/include/gtest
 test/CMakeFiles/main.dir/IndexOffsetTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-string.h
 test/CMakeFiles/main.dir/IndexOffsetTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-tuple.h
 test/CMakeFiles/main.dir/IndexOffsetTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-type-util.h
+test/CMakeFiles/main.dir/IndexOffsetTester.cc.o: ../include/BitCompressedVector.h
 test/CMakeFiles/main.dir/IndexOffsetTester.cc.o: ../include/IndexOffset.h
+test/CMakeFiles/main.dir/IndexOffsetTester.cc.o: ../include/LogStream.h
+test/CMakeFiles/main.dir/IndexOffsetTester.cc.o: ../include/Logging.h
+test/CMakeFiles/main.dir/IndexOffsetTester.cc.o: ../include/Timestamp.h
 test/CMakeFiles/main.dir/IndexOffsetTester.cc.o: ../test/IndexOffsetTester.cc
 
 test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o: ../include/BitCompressedVector.h
@@ -79,6 +83,7 @@ test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o: ../include/Logging.h
 test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o: ../include/Timestamp.h
 test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o: ../src/BitCompressedVector.cc
 
+test/CMakeFiles/main.dir/__/src/IndexOffset.cc.o: ../include/BitCompressedVector.h
 test/CMakeFiles/main.dir/__/src/IndexOffset.cc.o: ../include/IndexOffset.h
 test/CMakeFiles/main.dir/__/src/IndexOffset.cc.o: ../include/LogStream.h
 test/CMakeFiles/main.dir/__/src/IndexOffset.cc.o: ../include/Logging.h

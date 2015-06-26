@@ -1,7 +1,11 @@
 #include <Logging.h>
 #include <IndexOffset.h>
 
-IndexOffset::IndexOffset()
+IndexOffset::IndexOffset() : m_offsetVector(10000)
+{
+}
+
+IndexOffset::IndexOffset(uint64_t n) : m_offsetVector(n)
 {
 }
 
@@ -17,12 +21,7 @@ void IndexOffset::push_back(uint64_t index)
 
 void IndexOffset::print()
 {
-	uint64_t i = 0;
-	for(auto itr = m_offsetVector.begin(); itr != m_offsetVector.end(); itr++)
-	{
-		LOG_INFO << "IndexOffset[" << i << "]: " << *itr;
-		i++;
-	}
+    m_offsetVector.print();
 }
 
 uint64_t IndexOffset::get(uint64_t pos)
@@ -33,14 +32,15 @@ uint64_t IndexOffset::get(uint64_t pos)
         return 0;
     }
 
-	return m_offsetVector[pos];
+	return m_offsetVector.get(pos);
 }
 
 uint64_t IndexOffset::getRows()
 {
-	return m_offsetVector.size();
+	return m_offsetVector.getRows();
 }
 
+/*
 uint64_t IndexOffset::findBinarySplitPos(uint64_t positionIndex)
 {
 	uint64_t pos = 0;
@@ -54,13 +54,12 @@ uint64_t IndexOffset::findBinarySplitPos(uint64_t positionIndex)
 
     return pos;
 }
+*/
+
 void IndexOffset::offsetShrink(uint64_t pos, uint64_t count)
 {
-	for(auto itr = m_offsetVector.begin() + pos; itr != m_offsetVector.end();)
-	{
-		itr = m_offsetVector.erase(itr);
-	}
-	push_back(count);
+    m_offsetVector.posShrink(pos);
+    m_offsetVector.push_back(count);
 }
 
 void IndexOffset::clear()

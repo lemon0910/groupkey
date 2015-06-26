@@ -71,7 +71,11 @@ test/CMakeFiles/main.dir/IndexOffsetTester.cc.o
  ../../gtest-1.7.0/include/gtest/internal/gtest-string.h
  ../../gtest-1.7.0/include/gtest/internal/gtest-tuple.h
  ../../gtest-1.7.0/include/gtest/internal/gtest-type-util.h
+ ../include/BitCompressedVector.h
  ../include/IndexOffset.h
+ ../include/LogStream.h
+ ../include/Logging.h
+ ../include/Timestamp.h
  /home/lin/GroupKey/test/IndexOffsetTester.cc
 test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o
  ../include/BitCompressedVector.h
@@ -80,6 +84,7 @@ test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o
  ../include/Timestamp.h
  /home/lin/GroupKey/src/BitCompressedVector.cc
 test/CMakeFiles/main.dir/__/src/IndexOffset.cc.o
+ ../include/BitCompressedVector.h
  ../include/IndexOffset.h
  ../include/LogStream.h
  ../include/Logging.h
