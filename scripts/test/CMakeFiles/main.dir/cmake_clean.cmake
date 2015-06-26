@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/main.dir/DGroupKey.cc.o"
   "CMakeFiles/main.dir/BitCompressedVectorTester.cc.o"
   "CMakeFiles/main.dir/IndexOffsetTester.cc.o"
   "CMakeFiles/main.dir/DictionaryTester.cc.o"

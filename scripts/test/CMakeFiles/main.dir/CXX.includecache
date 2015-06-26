@@ -262,6 +262,28 @@ vector
 Logging.h
 -
 
+../include/DGroupKey.h
+string
+-
+map
+-
+vector
+-
+algorithm
+-
+boost/shared_ptr.hpp
+-
+BitCompressedVector.h
+-
+Dictionary.h
+-
+IndexOffset.h
+-
+RWMutex.h
+-
+Logging.h
+-
+
 ../include/Dictionary.h
 vector
 -
@@ -290,6 +312,20 @@ boost/noncopyable.hpp
 LogStream.h
 -
 Timestamp.h
+-
+
+../include/RWMutex.h
+Logging.h
+-
+boost/noncopyable.hpp
+-
+assert.h
+-
+pthread.h
+-
+errno.h
+-
+sys/syscall.h
 -
 
 ../include/Timestamp.h
@@ -362,6 +398,12 @@ BitCompressedVector.h
 gtest/gtest.h
 -
 vector
+-
+
+/home/lin/GroupKey/test/DGroupKey.cc
+gtest/gtest.h
+-
+DGroupKey.h
 -
 
 /home/lin/GroupKey/test/DictionaryTester.cc

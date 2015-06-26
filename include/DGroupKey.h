@@ -138,7 +138,7 @@ public:
                 {
                     tmpPosition.push_back(m_position->get(m_offset->get(m_dicPos) + i));
                 }
-                xVector.push_back(n_dicPos - m_dicPos);
+                xVector->push_back(n_dicPos - m_dicPos);
                 m_dicPos++;
                 n_dicPos++;
             }
@@ -160,7 +160,7 @@ public:
                     tmpPosition.push_back(otherPosition->get(
                         otherOffset->get(a_dicPos) + i) + m_position->getRows());
                 }
-                xVector.push_back(n_dicPos - m_dicPos);
+                xVector->push_back(n_dicPos - m_dicPos);
                 m_dicPos++;
                 a_dicPos++;
                 n_dicPos++;
@@ -179,7 +179,7 @@ public:
                 {
                     tmpPosition.push_back(m_position->get(m_offset->get(m_dicPos) + i));
                 }
-                xVector.push_back(n_dicPos - m_dicPos);
+                xVector->push_back(n_dicPos - m_dicPos);
                 m_dicPos++;
                 n_dicPos++;
             }
@@ -225,6 +225,7 @@ public:
         return m_position->checkCapacity();
     }
 
+    /*
     //二分分裂用于增量流程中的分裂，原则是留下前半部分的，将后半部分的联合索引返回给分裂函数的调用者
     DGroupKey<T>* binarysplit()
     {
@@ -331,25 +332,37 @@ public:
         m_dictionary->dicShrink(offsetPos);
 
     }
+    */
 
-    Dictionary<T>* getDictionary(){return m_dictionary;}
-    IndexOffset* getOffset(){return m_offset;}
-    BitCompressedVector* getPosition(){return m_position;}
+    Dictionary<T>* getDictionary()
+    {
+        return m_dictionary;
+    }
+
+    IndexOffset* getOffset()
+    {
+        return m_offset;
+    }
+
+    BitCompressedVector* getPosition()
+    {
+        return m_position;
+    }
 
     void print()
     {
-        cout << "====Dictionary====" << endl;
+        LOG_INFO << "====Dictionary====";
         m_dictionary->print();
-        cout << "==================" << endl;
-        cout << "======Offset======" << endl;
+        LOG_INFO << "==================";
+        LOG_INFO << "======Offset======";
         m_offset->print();
-        cout << "==================" << endl;
-        cout << "=====Position=====" << endl;
+        LOG_INFO << "==================";
+        LOG_INFO << "=====Position=====";
         m_position->print();
-        cout << "==================" << endl;
+        LOG_INFO << "==================";
     }
 
-    string getName()
+    std::string getName()
     {
         return m_columnName;
     }
@@ -358,47 +371,47 @@ public:
         return m_base;
     }
 
-    vector<uint64_t> getRangeRowKeyByPos(uint64_t floor, uint64_t ceiling)
+    vectorptr getRangeRowKeyByPos(uint64_t floor, uint64_t ceiling)
     {
-        vector<uint64_t> result;
+        vectorptr result;
         uint64_t offsetFloorPos = m_offset->get(floor);
         uint64_t offsetCeilingPos = m_offset->get(ceiling + 1); // need to plus 1
         for(uint64_t i = offsetFloorPos; i < offsetCeilingPos; i++)
         {
-            result.push_back(m_position->get(i));
+            result->push_back(m_position->get(i));
         }
         return result;
     }
 
-    vector<uint64_t> getRowKeyByPos(uint64_t pos)
+    vectorptr getRowKeyByPos(uint64_t pos)
     {
         return getRangeRowKeyByPos(pos, pos);
     }
 
-    vector<uint64_t> getRangeRowKeyById(uint64_t floor, uint64_t ceiling)
+    vectorptr getRangeRowKeyById(uint64_t floor, uint64_t ceiling)
     {
         floor = floor - m_base;
         ceiling = ceiling - m_base;
-        vector<uint64_t> result;
+        vectorptr result;
         uint64_t offsetFloorPos = m_offset->get(floor);
         uint64_t offsetCeilingPos = m_offset->get(ceiling + 1);
         for(uint64_t i = offsetFloorPos; i < offsetCeilingPos; i++)
         {
-            result.push_back(m_position->get(i));
+            result->push_back(m_position->get(i));
         }
         return result;
     }
 
-    vector<uint64_t> getRowKeyById(uint64_t id)
+    vectorptr getRowKeyById(uint64_t id)
     {
         return getRangeRowKeyById(id, id);
     }
 
-    vector<T> getDicValue(vector<uint64_t> dicId)
+    boost::shared_ptr<std::vector<T> > getDicValue(std::vector<uint64_t> &dicId)
     {
-        vector<T> result;
-        for(vector<uint64_t>::iterator itr = dicId.begin(); itr != dicId.end(); itr++)
-            result.push_back(m_dictionary->get(*itr - m_base));
+        boost::shared_ptr<std::vector<T> > result;
+        for(auto itr = dicId.begin(); itr != dicId.end(); itr++)
+            result->push_back(m_dictionary->get(*itr - m_base));
         return result;
     }
 

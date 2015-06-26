@@ -140,6 +140,30 @@ BitCompressedVectorTester.cc.s:
 	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.s
 .PHONY : BitCompressedVectorTester.cc.s
 
+DGroupKey.o: DGroupKey.cc.o
+.PHONY : DGroupKey.o
+
+# target to build an object file
+DGroupKey.cc.o:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/DGroupKey.cc.o
+.PHONY : DGroupKey.cc.o
+
+DGroupKey.i: DGroupKey.cc.i
+.PHONY : DGroupKey.i
+
+# target to preprocess a source file
+DGroupKey.cc.i:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/DGroupKey.cc.i
+.PHONY : DGroupKey.cc.i
+
+DGroupKey.s: DGroupKey.cc.s
+.PHONY : DGroupKey.s
+
+# target to generate assembly for a file
+DGroupKey.cc.s:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/DGroupKey.cc.s
+.PHONY : DGroupKey.cc.s
+
 DictionaryTester.o: DictionaryTester.cc.o
 .PHONY : DictionaryTester.o
 
@@ -344,6 +368,9 @@ help:
 	@echo "... BitCompressedVectorTester.o"
 	@echo "... BitCompressedVectorTester.i"
 	@echo "... BitCompressedVectorTester.s"
+	@echo "... DGroupKey.o"
+	@echo "... DGroupKey.i"
+	@echo "... DGroupKey.s"
 	@echo "... DictionaryTester.o"
 	@echo "... DictionaryTester.i"
 	@echo "... DictionaryTester.s"

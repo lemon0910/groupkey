@@ -49,9 +49,32 @@ include test/CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include test/CMakeFiles/main.dir/flags.make
 
+test/CMakeFiles/main.dir/DGroupKey.cc.o: test/CMakeFiles/main.dir/flags.make
+test/CMakeFiles/main.dir/DGroupKey.cc.o: ../test/DGroupKey.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/DGroupKey.cc.o"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/DGroupKey.cc.o -c /home/lin/GroupKey/test/DGroupKey.cc
+
+test/CMakeFiles/main.dir/DGroupKey.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/DGroupKey.cc.i"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lin/GroupKey/test/DGroupKey.cc > CMakeFiles/main.dir/DGroupKey.cc.i
+
+test/CMakeFiles/main.dir/DGroupKey.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/DGroupKey.cc.s"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lin/GroupKey/test/DGroupKey.cc -o CMakeFiles/main.dir/DGroupKey.cc.s
+
+test/CMakeFiles/main.dir/DGroupKey.cc.o.requires:
+.PHONY : test/CMakeFiles/main.dir/DGroupKey.cc.o.requires
+
+test/CMakeFiles/main.dir/DGroupKey.cc.o.provides: test/CMakeFiles/main.dir/DGroupKey.cc.o.requires
+	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/DGroupKey.cc.o.provides.build
+.PHONY : test/CMakeFiles/main.dir/DGroupKey.cc.o.provides
+
+test/CMakeFiles/main.dir/DGroupKey.cc.o.provides.build: test/CMakeFiles/main.dir/DGroupKey.cc.o
+
 test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o: ../test/BitCompressedVectorTester.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/BitCompressedVectorTester.cc.o -c /home/lin/GroupKey/test/BitCompressedVectorTester.cc
 
@@ -74,7 +97,7 @@ test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o.provides.build: test/CMa
 
 test/CMakeFiles/main.dir/IndexOffsetTester.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/IndexOffsetTester.cc.o: ../test/IndexOffsetTester.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/IndexOffsetTester.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/IndexOffsetTester.cc.o -c /home/lin/GroupKey/test/IndexOffsetTester.cc
 
@@ -97,7 +120,7 @@ test/CMakeFiles/main.dir/IndexOffsetTester.cc.o.provides.build: test/CMakeFiles/
 
 test/CMakeFiles/main.dir/DictionaryTester.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/DictionaryTester.cc.o: ../test/DictionaryTester.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/DictionaryTester.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/DictionaryTester.cc.o -c /home/lin/GroupKey/test/DictionaryTester.cc
 
@@ -120,7 +143,7 @@ test/CMakeFiles/main.dir/DictionaryTester.cc.o.provides.build: test/CMakeFiles/m
 
 test/CMakeFiles/main.dir/main.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/main.cc.o: ../test/main.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/main.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main.cc.o -c /home/lin/GroupKey/test/main.cc
 
@@ -143,7 +166,7 @@ test/CMakeFiles/main.dir/main.cc.o.provides.build: test/CMakeFiles/main.dir/main
 
 test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o: ../src/BitCompressedVector.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o -c /home/lin/GroupKey/src/BitCompressedVector.cc
 
@@ -166,7 +189,7 @@ test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o.provides.build: test/CM
 
 test/CMakeFiles/main.dir/__/src/Logging.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/__/src/Logging.cc.o: ../src/Logging.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/__/src/Logging.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/__/src/Logging.cc.o -c /home/lin/GroupKey/src/Logging.cc
 
@@ -189,7 +212,7 @@ test/CMakeFiles/main.dir/__/src/Logging.cc.o.provides.build: test/CMakeFiles/mai
 
 test/CMakeFiles/main.dir/__/src/LogStream.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/__/src/LogStream.cc.o: ../src/LogStream.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/__/src/LogStream.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/__/src/LogStream.cc.o -c /home/lin/GroupKey/src/LogStream.cc
 
@@ -212,7 +235,7 @@ test/CMakeFiles/main.dir/__/src/LogStream.cc.o.provides.build: test/CMakeFiles/m
 
 test/CMakeFiles/main.dir/__/src/Timestamp.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/__/src/Timestamp.cc.o: ../src/Timestamp.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/__/src/Timestamp.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/__/src/Timestamp.cc.o -c /home/lin/GroupKey/src/Timestamp.cc
 
@@ -235,7 +258,7 @@ test/CMakeFiles/main.dir/__/src/Timestamp.cc.o.provides.build: test/CMakeFiles/m
 
 test/CMakeFiles/main.dir/__/src/IndexOffset.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/__/src/IndexOffset.cc.o: ../src/IndexOffset.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/__/src/IndexOffset.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/__/src/IndexOffset.cc.o -c /home/lin/GroupKey/src/IndexOffset.cc
 
@@ -258,6 +281,7 @@ test/CMakeFiles/main.dir/__/src/IndexOffset.cc.o.provides.build: test/CMakeFiles
 
 # Object files for target main
 main_OBJECTS = \
+"CMakeFiles/main.dir/DGroupKey.cc.o" \
 "CMakeFiles/main.dir/BitCompressedVectorTester.cc.o" \
 "CMakeFiles/main.dir/IndexOffsetTester.cc.o" \
 "CMakeFiles/main.dir/DictionaryTester.cc.o" \
@@ -271,6 +295,7 @@ main_OBJECTS = \
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
+test/main: test/CMakeFiles/main.dir/DGroupKey.cc.o
 test/main: test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o
 test/main: test/CMakeFiles/main.dir/IndexOffsetTester.cc.o
 test/main: test/CMakeFiles/main.dir/DictionaryTester.cc.o
@@ -289,6 +314,7 @@ test/main: test/CMakeFiles/main.dir/link.txt
 test/CMakeFiles/main.dir/build: test/main
 .PHONY : test/CMakeFiles/main.dir/build
 
+test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/DGroupKey.cc.o.requires
 test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o.requires
 test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/IndexOffsetTester.cc.o.requires
 test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/DictionaryTester.cc.o.requires
