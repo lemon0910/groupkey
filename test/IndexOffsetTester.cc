@@ -12,4 +12,5 @@ TEST(IndexOffset, pushAndGet)
     }
 
     ASSERT_EQ(0, index.get(1000));
+    ASSERT_EQ(1000, index.getRows());
 }

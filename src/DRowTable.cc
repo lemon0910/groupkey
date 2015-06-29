@@ -18,8 +18,8 @@ void DRowTable::fillOneColumn(const string columnName, const uint64_t& itemCount
 
 vectorptr DRowTable::getValue(const string columnName, const vector<uint64_t>& rowID)
 {
-	BitCompressedVector value = m_attributeVector[caculatePos(columnName)];
-	vectorptr result;
+	BitCompressedVector& value = m_attributeVector[caculatePos(columnName)];
+	vectorptr result(new vector<uint64_t>());
 	for(vector<uint64_t>::const_iterator itr = rowID.begin(); itr != rowID.end(); itr++)
 	{
 		result->push_back(value.get((*itr - m_base)));
@@ -40,7 +40,7 @@ void DRowTable::updateOneColumn(const string columnName, const uint64_t& itemCou
 
 vectorvectorptr DRowTable::getMultiValue(const vector<string>& columnName, const vector<uint64_t>& rowID)
 {
-	vectorvectorptr results;
+	vectorvectorptr results(new std::vector<std::vector<uint64_t> >());
 	for(vector<string>::const_iterator itr = columnName.begin(); itr != columnName.end(); itr++)
 	{
 		results->push_back(*getValue(*itr, rowID));
