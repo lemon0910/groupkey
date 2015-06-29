@@ -49,9 +49,32 @@ include test/CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include test/CMakeFiles/main.dir/flags.make
 
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: test/CMakeFiles/main.dir/flags.make
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../test/TableManagerTester.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/TableManagerTester.cc.o"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/TableManagerTester.cc.o -c /home/lin/GroupKey/test/TableManagerTester.cc
+
+test/CMakeFiles/main.dir/TableManagerTester.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/TableManagerTester.cc.i"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lin/GroupKey/test/TableManagerTester.cc > CMakeFiles/main.dir/TableManagerTester.cc.i
+
+test/CMakeFiles/main.dir/TableManagerTester.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/TableManagerTester.cc.s"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lin/GroupKey/test/TableManagerTester.cc -o CMakeFiles/main.dir/TableManagerTester.cc.s
+
+test/CMakeFiles/main.dir/TableManagerTester.cc.o.requires:
+.PHONY : test/CMakeFiles/main.dir/TableManagerTester.cc.o.requires
+
+test/CMakeFiles/main.dir/TableManagerTester.cc.o.provides: test/CMakeFiles/main.dir/TableManagerTester.cc.o.requires
+	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/TableManagerTester.cc.o.provides.build
+.PHONY : test/CMakeFiles/main.dir/TableManagerTester.cc.o.provides
+
+test/CMakeFiles/main.dir/TableManagerTester.cc.o.provides.build: test/CMakeFiles/main.dir/TableManagerTester.cc.o
+
 test/CMakeFiles/main.dir/DGroupKey.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/DGroupKey.cc.o: ../test/DGroupKey.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/DGroupKey.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/DGroupKey.cc.o -c /home/lin/GroupKey/test/DGroupKey.cc
 
@@ -74,7 +97,7 @@ test/CMakeFiles/main.dir/DGroupKey.cc.o.provides.build: test/CMakeFiles/main.dir
 
 test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o: ../test/BitCompressedVectorTester.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/BitCompressedVectorTester.cc.o -c /home/lin/GroupKey/test/BitCompressedVectorTester.cc
 
@@ -95,9 +118,32 @@ test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o.provides: test/CMakeFile
 
 test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o.provides.build: test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o
 
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: test/CMakeFiles/main.dir/flags.make
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../test/DRowTableTester.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/DRowTableTester.cc.o"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/DRowTableTester.cc.o -c /home/lin/GroupKey/test/DRowTableTester.cc
+
+test/CMakeFiles/main.dir/DRowTableTester.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/DRowTableTester.cc.i"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lin/GroupKey/test/DRowTableTester.cc > CMakeFiles/main.dir/DRowTableTester.cc.i
+
+test/CMakeFiles/main.dir/DRowTableTester.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/DRowTableTester.cc.s"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lin/GroupKey/test/DRowTableTester.cc -o CMakeFiles/main.dir/DRowTableTester.cc.s
+
+test/CMakeFiles/main.dir/DRowTableTester.cc.o.requires:
+.PHONY : test/CMakeFiles/main.dir/DRowTableTester.cc.o.requires
+
+test/CMakeFiles/main.dir/DRowTableTester.cc.o.provides: test/CMakeFiles/main.dir/DRowTableTester.cc.o.requires
+	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/DRowTableTester.cc.o.provides.build
+.PHONY : test/CMakeFiles/main.dir/DRowTableTester.cc.o.provides
+
+test/CMakeFiles/main.dir/DRowTableTester.cc.o.provides.build: test/CMakeFiles/main.dir/DRowTableTester.cc.o
+
 test/CMakeFiles/main.dir/IndexOffsetTester.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/IndexOffsetTester.cc.o: ../test/IndexOffsetTester.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/IndexOffsetTester.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/IndexOffsetTester.cc.o -c /home/lin/GroupKey/test/IndexOffsetTester.cc
 
@@ -118,9 +164,32 @@ test/CMakeFiles/main.dir/IndexOffsetTester.cc.o.provides: test/CMakeFiles/main.d
 
 test/CMakeFiles/main.dir/IndexOffsetTester.cc.o.provides.build: test/CMakeFiles/main.dir/IndexOffsetTester.cc.o
 
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: test/CMakeFiles/main.dir/flags.make
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../test/ColumnTableTester.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/ColumnTableTester.cc.o"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/ColumnTableTester.cc.o -c /home/lin/GroupKey/test/ColumnTableTester.cc
+
+test/CMakeFiles/main.dir/ColumnTableTester.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/ColumnTableTester.cc.i"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lin/GroupKey/test/ColumnTableTester.cc > CMakeFiles/main.dir/ColumnTableTester.cc.i
+
+test/CMakeFiles/main.dir/ColumnTableTester.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/ColumnTableTester.cc.s"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lin/GroupKey/test/ColumnTableTester.cc -o CMakeFiles/main.dir/ColumnTableTester.cc.s
+
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o.requires:
+.PHONY : test/CMakeFiles/main.dir/ColumnTableTester.cc.o.requires
+
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o.provides: test/CMakeFiles/main.dir/ColumnTableTester.cc.o.requires
+	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/ColumnTableTester.cc.o.provides.build
+.PHONY : test/CMakeFiles/main.dir/ColumnTableTester.cc.o.provides
+
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o.provides.build: test/CMakeFiles/main.dir/ColumnTableTester.cc.o
+
 test/CMakeFiles/main.dir/DictionaryTester.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/DictionaryTester.cc.o: ../test/DictionaryTester.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/DictionaryTester.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/DictionaryTester.cc.o -c /home/lin/GroupKey/test/DictionaryTester.cc
 
@@ -143,7 +212,7 @@ test/CMakeFiles/main.dir/DictionaryTester.cc.o.provides.build: test/CMakeFiles/m
 
 test/CMakeFiles/main.dir/main.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/main.cc.o: ../test/main.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/main.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main.cc.o -c /home/lin/GroupKey/test/main.cc
 
@@ -166,7 +235,7 @@ test/CMakeFiles/main.dir/main.cc.o.provides.build: test/CMakeFiles/main.dir/main
 
 test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o: ../src/BitCompressedVector.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o -c /home/lin/GroupKey/src/BitCompressedVector.cc
 
@@ -189,7 +258,7 @@ test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o.provides.build: test/CM
 
 test/CMakeFiles/main.dir/__/src/Logging.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/__/src/Logging.cc.o: ../src/Logging.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/__/src/Logging.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/__/src/Logging.cc.o -c /home/lin/GroupKey/src/Logging.cc
 
@@ -212,7 +281,7 @@ test/CMakeFiles/main.dir/__/src/Logging.cc.o.provides.build: test/CMakeFiles/mai
 
 test/CMakeFiles/main.dir/__/src/LogStream.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/__/src/LogStream.cc.o: ../src/LogStream.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/__/src/LogStream.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/__/src/LogStream.cc.o -c /home/lin/GroupKey/src/LogStream.cc
 
@@ -235,7 +304,7 @@ test/CMakeFiles/main.dir/__/src/LogStream.cc.o.provides.build: test/CMakeFiles/m
 
 test/CMakeFiles/main.dir/__/src/Timestamp.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/__/src/Timestamp.cc.o: ../src/Timestamp.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/__/src/Timestamp.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/__/src/Timestamp.cc.o -c /home/lin/GroupKey/src/Timestamp.cc
 
@@ -258,7 +327,7 @@ test/CMakeFiles/main.dir/__/src/Timestamp.cc.o.provides.build: test/CMakeFiles/m
 
 test/CMakeFiles/main.dir/__/src/IndexOffset.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/__/src/IndexOffset.cc.o: ../src/IndexOffset.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/__/src/IndexOffset.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/__/src/IndexOffset.cc.o -c /home/lin/GroupKey/src/IndexOffset.cc
 
@@ -279,25 +348,103 @@ test/CMakeFiles/main.dir/__/src/IndexOffset.cc.o.provides: test/CMakeFiles/main.
 
 test/CMakeFiles/main.dir/__/src/IndexOffset.cc.o.provides.build: test/CMakeFiles/main.dir/__/src/IndexOffset.cc.o
 
+test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o: test/CMakeFiles/main.dir/flags.make
+test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o: ../src/ColumnTable.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_14)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/__/src/ColumnTable.cc.o -c /home/lin/GroupKey/src/ColumnTable.cc
+
+test/CMakeFiles/main.dir/__/src/ColumnTable.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/__/src/ColumnTable.cc.i"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lin/GroupKey/src/ColumnTable.cc > CMakeFiles/main.dir/__/src/ColumnTable.cc.i
+
+test/CMakeFiles/main.dir/__/src/ColumnTable.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/__/src/ColumnTable.cc.s"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lin/GroupKey/src/ColumnTable.cc -o CMakeFiles/main.dir/__/src/ColumnTable.cc.s
+
+test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o.requires:
+.PHONY : test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o.requires
+
+test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o.provides: test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o.requires
+	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o.provides.build
+.PHONY : test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o.provides
+
+test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o.provides.build: test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o
+
+test/CMakeFiles/main.dir/__/src/DRowTable.cc.o: test/CMakeFiles/main.dir/flags.make
+test/CMakeFiles/main.dir/__/src/DRowTable.cc.o: ../src/DRowTable.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_15)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/__/src/DRowTable.cc.o"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/__/src/DRowTable.cc.o -c /home/lin/GroupKey/src/DRowTable.cc
+
+test/CMakeFiles/main.dir/__/src/DRowTable.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/__/src/DRowTable.cc.i"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lin/GroupKey/src/DRowTable.cc > CMakeFiles/main.dir/__/src/DRowTable.cc.i
+
+test/CMakeFiles/main.dir/__/src/DRowTable.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/__/src/DRowTable.cc.s"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lin/GroupKey/src/DRowTable.cc -o CMakeFiles/main.dir/__/src/DRowTable.cc.s
+
+test/CMakeFiles/main.dir/__/src/DRowTable.cc.o.requires:
+.PHONY : test/CMakeFiles/main.dir/__/src/DRowTable.cc.o.requires
+
+test/CMakeFiles/main.dir/__/src/DRowTable.cc.o.provides: test/CMakeFiles/main.dir/__/src/DRowTable.cc.o.requires
+	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/__/src/DRowTable.cc.o.provides.build
+.PHONY : test/CMakeFiles/main.dir/__/src/DRowTable.cc.o.provides
+
+test/CMakeFiles/main.dir/__/src/DRowTable.cc.o.provides.build: test/CMakeFiles/main.dir/__/src/DRowTable.cc.o
+
+test/CMakeFiles/main.dir/__/src/TableManager.cc.o: test/CMakeFiles/main.dir/flags.make
+test/CMakeFiles/main.dir/__/src/TableManager.cc.o: ../src/TableManager.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_16)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/__/src/TableManager.cc.o"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/__/src/TableManager.cc.o -c /home/lin/GroupKey/src/TableManager.cc
+
+test/CMakeFiles/main.dir/__/src/TableManager.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/__/src/TableManager.cc.i"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lin/GroupKey/src/TableManager.cc > CMakeFiles/main.dir/__/src/TableManager.cc.i
+
+test/CMakeFiles/main.dir/__/src/TableManager.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/__/src/TableManager.cc.s"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lin/GroupKey/src/TableManager.cc -o CMakeFiles/main.dir/__/src/TableManager.cc.s
+
+test/CMakeFiles/main.dir/__/src/TableManager.cc.o.requires:
+.PHONY : test/CMakeFiles/main.dir/__/src/TableManager.cc.o.requires
+
+test/CMakeFiles/main.dir/__/src/TableManager.cc.o.provides: test/CMakeFiles/main.dir/__/src/TableManager.cc.o.requires
+	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/__/src/TableManager.cc.o.provides.build
+.PHONY : test/CMakeFiles/main.dir/__/src/TableManager.cc.o.provides
+
+test/CMakeFiles/main.dir/__/src/TableManager.cc.o.provides.build: test/CMakeFiles/main.dir/__/src/TableManager.cc.o
+
 # Object files for target main
 main_OBJECTS = \
+"CMakeFiles/main.dir/TableManagerTester.cc.o" \
 "CMakeFiles/main.dir/DGroupKey.cc.o" \
 "CMakeFiles/main.dir/BitCompressedVectorTester.cc.o" \
+"CMakeFiles/main.dir/DRowTableTester.cc.o" \
 "CMakeFiles/main.dir/IndexOffsetTester.cc.o" \
+"CMakeFiles/main.dir/ColumnTableTester.cc.o" \
 "CMakeFiles/main.dir/DictionaryTester.cc.o" \
 "CMakeFiles/main.dir/main.cc.o" \
 "CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o" \
 "CMakeFiles/main.dir/__/src/Logging.cc.o" \
 "CMakeFiles/main.dir/__/src/LogStream.cc.o" \
 "CMakeFiles/main.dir/__/src/Timestamp.cc.o" \
-"CMakeFiles/main.dir/__/src/IndexOffset.cc.o"
+"CMakeFiles/main.dir/__/src/IndexOffset.cc.o" \
+"CMakeFiles/main.dir/__/src/ColumnTable.cc.o" \
+"CMakeFiles/main.dir/__/src/DRowTable.cc.o" \
+"CMakeFiles/main.dir/__/src/TableManager.cc.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
+test/main: test/CMakeFiles/main.dir/TableManagerTester.cc.o
 test/main: test/CMakeFiles/main.dir/DGroupKey.cc.o
 test/main: test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o
+test/main: test/CMakeFiles/main.dir/DRowTableTester.cc.o
 test/main: test/CMakeFiles/main.dir/IndexOffsetTester.cc.o
+test/main: test/CMakeFiles/main.dir/ColumnTableTester.cc.o
 test/main: test/CMakeFiles/main.dir/DictionaryTester.cc.o
 test/main: test/CMakeFiles/main.dir/main.cc.o
 test/main: test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o
@@ -305,6 +452,9 @@ test/main: test/CMakeFiles/main.dir/__/src/Logging.cc.o
 test/main: test/CMakeFiles/main.dir/__/src/LogStream.cc.o
 test/main: test/CMakeFiles/main.dir/__/src/Timestamp.cc.o
 test/main: test/CMakeFiles/main.dir/__/src/IndexOffset.cc.o
+test/main: test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o
+test/main: test/CMakeFiles/main.dir/__/src/DRowTable.cc.o
+test/main: test/CMakeFiles/main.dir/__/src/TableManager.cc.o
 test/main: test/CMakeFiles/main.dir/build.make
 test/main: test/CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable main"
@@ -314,9 +464,12 @@ test/main: test/CMakeFiles/main.dir/link.txt
 test/CMakeFiles/main.dir/build: test/main
 .PHONY : test/CMakeFiles/main.dir/build
 
+test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/TableManagerTester.cc.o.requires
 test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/DGroupKey.cc.o.requires
 test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o.requires
+test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/DRowTableTester.cc.o.requires
 test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/IndexOffsetTester.cc.o.requires
+test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/ColumnTableTester.cc.o.requires
 test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/DictionaryTester.cc.o.requires
 test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/main.cc.o.requires
 test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o.requires
@@ -324,6 +477,9 @@ test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/__/src/Logging.cc.o.
 test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/__/src/LogStream.cc.o.requires
 test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/__/src/Timestamp.cc.o.requires
 test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/__/src/IndexOffset.cc.o.requires
+test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o.requires
+test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/__/src/DRowTable.cc.o.requires
+test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/__/src/TableManager.cc.o.requires
 .PHONY : test/CMakeFiles/main.dir/requires
 
 test/CMakeFiles/main.dir/clean:

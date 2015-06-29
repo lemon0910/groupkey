@@ -26,6 +26,36 @@ test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o: ../include/Logging.h
 test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o: ../include/Timestamp.h
 test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o: ../test/BitCompressedVectorTester.cc
 
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest-death-test.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest-message.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest-param-test.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest-printers.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest-test-part.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest-typed-test.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest_pred_impl.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest_prod.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-death-test-internal.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-filepath.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-internal.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-linked_ptr.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-param-util-generated.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-param-util.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-port.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-string.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-tuple.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-type-util.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../include/BitCompressedVector.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../include/ColumnTable.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../include/DGroupKey.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../include/Dictionary.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../include/IndexOffset.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../include/LogStream.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../include/Logging.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../include/RWMutex.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../include/Timestamp.h
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../test/ColumnTableTester.cc
+
 test/CMakeFiles/main.dir/DGroupKey.cc.o: ../../gtest-1.7.0/include/gtest/gtest-death-test.h
 test/CMakeFiles/main.dir/DGroupKey.cc.o: ../../gtest-1.7.0/include/gtest/gtest-message.h
 test/CMakeFiles/main.dir/DGroupKey.cc.o: ../../gtest-1.7.0/include/gtest/gtest-param-test.h
@@ -54,6 +84,33 @@ test/CMakeFiles/main.dir/DGroupKey.cc.o: ../include/Logging.h
 test/CMakeFiles/main.dir/DGroupKey.cc.o: ../include/RWMutex.h
 test/CMakeFiles/main.dir/DGroupKey.cc.o: ../include/Timestamp.h
 test/CMakeFiles/main.dir/DGroupKey.cc.o: ../test/DGroupKey.cc
+
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest-death-test.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest-message.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest-param-test.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest-printers.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest-test-part.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest-typed-test.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest_pred_impl.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest_prod.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-death-test-internal.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-filepath.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-internal.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-linked_ptr.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-param-util-generated.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-param-util.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-port.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-string.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-tuple.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-type-util.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../include/BitCompressedVector.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../include/DRowTable.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../include/LogStream.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../include/Logging.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../include/RWMutex.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../include/Timestamp.h
+test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../test/DRowTableTester.cc
 
 test/CMakeFiles/main.dir/DictionaryTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest-death-test.h
 test/CMakeFiles/main.dir/DictionaryTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest-message.h
@@ -106,11 +163,62 @@ test/CMakeFiles/main.dir/IndexOffsetTester.cc.o: ../include/Logging.h
 test/CMakeFiles/main.dir/IndexOffsetTester.cc.o: ../include/Timestamp.h
 test/CMakeFiles/main.dir/IndexOffsetTester.cc.o: ../test/IndexOffsetTester.cc
 
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest-death-test.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest-message.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest-param-test.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest-printers.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest-test-part.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest-typed-test.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest_pred_impl.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../../gtest-1.7.0/include/gtest/gtest_prod.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-death-test-internal.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-filepath.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-internal.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-linked_ptr.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-param-util-generated.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-param-util.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-port.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-string.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-tuple.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../../gtest-1.7.0/include/gtest/internal/gtest-type-util.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../include/BitCompressedVector.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../include/ColumnTable.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../include/DGroupKey.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../include/DRowTable.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../include/Dictionary.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../include/IndexOffset.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../include/LogStream.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../include/Logging.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../include/RWMutex.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../include/TableManager.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../include/Timestamp.h
+test/CMakeFiles/main.dir/TableManagerTester.cc.o: ../test/TableManagerTester.cc
+
 test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o: ../include/BitCompressedVector.h
 test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o: ../include/LogStream.h
 test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o: ../include/Logging.h
 test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o: ../include/Timestamp.h
 test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o: ../src/BitCompressedVector.cc
+
+test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o: ../include/BitCompressedVector.h
+test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o: ../include/ColumnTable.h
+test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o: ../include/DGroupKey.h
+test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o: ../include/Dictionary.h
+test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o: ../include/IndexOffset.h
+test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o: ../include/LogStream.h
+test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o: ../include/Logging.h
+test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o: ../include/RWMutex.h
+test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o: ../include/Timestamp.h
+test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o: ../src/ColumnTable.cc
+
+test/CMakeFiles/main.dir/__/src/DRowTable.cc.o: ../include/BitCompressedVector.h
+test/CMakeFiles/main.dir/__/src/DRowTable.cc.o: ../include/DRowTable.h
+test/CMakeFiles/main.dir/__/src/DRowTable.cc.o: ../include/LogStream.h
+test/CMakeFiles/main.dir/__/src/DRowTable.cc.o: ../include/Logging.h
+test/CMakeFiles/main.dir/__/src/DRowTable.cc.o: ../include/RWMutex.h
+test/CMakeFiles/main.dir/__/src/DRowTable.cc.o: ../include/Timestamp.h
+test/CMakeFiles/main.dir/__/src/DRowTable.cc.o: ../src/DRowTable.cc
 
 test/CMakeFiles/main.dir/__/src/IndexOffset.cc.o: ../include/BitCompressedVector.h
 test/CMakeFiles/main.dir/__/src/IndexOffset.cc.o: ../include/IndexOffset.h
@@ -126,6 +234,19 @@ test/CMakeFiles/main.dir/__/src/Logging.cc.o: ../include/LogStream.h
 test/CMakeFiles/main.dir/__/src/Logging.cc.o: ../include/Logging.h
 test/CMakeFiles/main.dir/__/src/Logging.cc.o: ../include/Timestamp.h
 test/CMakeFiles/main.dir/__/src/Logging.cc.o: ../src/Logging.cc
+
+test/CMakeFiles/main.dir/__/src/TableManager.cc.o: ../include/BitCompressedVector.h
+test/CMakeFiles/main.dir/__/src/TableManager.cc.o: ../include/ColumnTable.h
+test/CMakeFiles/main.dir/__/src/TableManager.cc.o: ../include/DGroupKey.h
+test/CMakeFiles/main.dir/__/src/TableManager.cc.o: ../include/DRowTable.h
+test/CMakeFiles/main.dir/__/src/TableManager.cc.o: ../include/Dictionary.h
+test/CMakeFiles/main.dir/__/src/TableManager.cc.o: ../include/IndexOffset.h
+test/CMakeFiles/main.dir/__/src/TableManager.cc.o: ../include/LogStream.h
+test/CMakeFiles/main.dir/__/src/TableManager.cc.o: ../include/Logging.h
+test/CMakeFiles/main.dir/__/src/TableManager.cc.o: ../include/RWMutex.h
+test/CMakeFiles/main.dir/__/src/TableManager.cc.o: ../include/TableManager.h
+test/CMakeFiles/main.dir/__/src/TableManager.cc.o: ../include/Timestamp.h
+test/CMakeFiles/main.dir/__/src/TableManager.cc.o: ../src/TableManager.cc
 
 test/CMakeFiles/main.dir/__/src/Timestamp.cc.o: ../include/Timestamp.h
 test/CMakeFiles/main.dir/__/src/Timestamp.cc.o: ../src/Timestamp.cc

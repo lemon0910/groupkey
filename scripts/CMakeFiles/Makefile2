@@ -74,7 +74,7 @@ test/preinstall:
 test/CMakeFiles/main.dir/all:
 	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/depend
 	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles  1 2 3 4 5 6 7 8 9 10
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
 	@echo "Built target main"
 .PHONY : test/CMakeFiles/main.dir/all
 
@@ -84,7 +84,7 @@ all: test/CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lin/GroupKey/scripts/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lin/GroupKey/scripts/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lin/GroupKey/scripts/CMakeFiles 0
 .PHONY : test/CMakeFiles/main.dir/rule

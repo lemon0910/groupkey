@@ -262,6 +262,14 @@ vector
 Logging.h
 -
 
+../include/ColumnTable.h
+string
+-
+DGroupKey.h
+-
+RWMutex.h
+-
+
 ../include/DGroupKey.h
 string
 -
@@ -282,6 +290,22 @@ IndexOffset.h
 RWMutex.h
 -
 Logging.h
+-
+
+../include/DRowTable.h
+string
+-
+vector
+-
+algorithm
+-
+BitCompressedVector.h
+-
+RWMutex.h
+-
+Logging.h
+-
+boost/shared_ptr.hpp
 -
 
 ../include/Dictionary.h
@@ -328,6 +352,14 @@ errno.h
 sys/syscall.h
 -
 
+../include/TableManager.h
+ColumnTable.h
+-
+DRowTable.h
+-
+string
+-
+
 ../include/Timestamp.h
 boost/operators.hpp
 -
@@ -338,6 +370,16 @@ string
 BitCompressedVector.h
 -
 algorithm
+-
+
+/home/lin/GroupKey/src/ColumnTable.cc
+ColumnTable.h
+-
+Logging.h
+-
+
+/home/lin/GroupKey/src/DRowTable.cc
+DRowTable.h
 -
 
 /home/lin/GroupKey/src/IndexOffset.cc
@@ -380,6 +422,10 @@ string.h
 sstream
 -
 
+/home/lin/GroupKey/src/TableManager.cc
+TableManager.h
+-
+
 /home/lin/GroupKey/src/Timestamp.cc
 Timestamp.h
 -
@@ -400,10 +446,22 @@ gtest/gtest.h
 vector
 -
 
+/home/lin/GroupKey/test/ColumnTableTester.cc
+gtest/gtest.h
+-
+ColumnTable.h
+-
+
 /home/lin/GroupKey/test/DGroupKey.cc
 gtest/gtest.h
 -
 DGroupKey.h
+-
+
+/home/lin/GroupKey/test/DRowTableTester.cc
+gtest/gtest.h
+-
+DRowTable.h
 -
 
 /home/lin/GroupKey/test/DictionaryTester.cc
@@ -418,6 +476,12 @@ string
 gtest/gtest.h
 -
 IndexOffset.h
+-
+
+/home/lin/GroupKey/test/TableManagerTester.cc
+gtest/gtest.h
+-
+TableManager.h
 -
 
 /home/lin/GroupKey/test/main.cc

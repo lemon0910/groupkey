@@ -140,6 +140,30 @@ BitCompressedVectorTester.cc.s:
 	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.s
 .PHONY : BitCompressedVectorTester.cc.s
 
+ColumnTableTester.o: ColumnTableTester.cc.o
+.PHONY : ColumnTableTester.o
+
+# target to build an object file
+ColumnTableTester.cc.o:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/ColumnTableTester.cc.o
+.PHONY : ColumnTableTester.cc.o
+
+ColumnTableTester.i: ColumnTableTester.cc.i
+.PHONY : ColumnTableTester.i
+
+# target to preprocess a source file
+ColumnTableTester.cc.i:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/ColumnTableTester.cc.i
+.PHONY : ColumnTableTester.cc.i
+
+ColumnTableTester.s: ColumnTableTester.cc.s
+.PHONY : ColumnTableTester.s
+
+# target to generate assembly for a file
+ColumnTableTester.cc.s:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/ColumnTableTester.cc.s
+.PHONY : ColumnTableTester.cc.s
+
 DGroupKey.o: DGroupKey.cc.o
 .PHONY : DGroupKey.o
 
@@ -163,6 +187,30 @@ DGroupKey.s: DGroupKey.cc.s
 DGroupKey.cc.s:
 	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/DGroupKey.cc.s
 .PHONY : DGroupKey.cc.s
+
+DRowTableTester.o: DRowTableTester.cc.o
+.PHONY : DRowTableTester.o
+
+# target to build an object file
+DRowTableTester.cc.o:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/DRowTableTester.cc.o
+.PHONY : DRowTableTester.cc.o
+
+DRowTableTester.i: DRowTableTester.cc.i
+.PHONY : DRowTableTester.i
+
+# target to preprocess a source file
+DRowTableTester.cc.i:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/DRowTableTester.cc.i
+.PHONY : DRowTableTester.cc.i
+
+DRowTableTester.s: DRowTableTester.cc.s
+.PHONY : DRowTableTester.s
+
+# target to generate assembly for a file
+DRowTableTester.cc.s:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/DRowTableTester.cc.s
+.PHONY : DRowTableTester.cc.s
 
 DictionaryTester.o: DictionaryTester.cc.o
 .PHONY : DictionaryTester.o
@@ -212,6 +260,30 @@ IndexOffsetTester.cc.s:
 	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/IndexOffsetTester.cc.s
 .PHONY : IndexOffsetTester.cc.s
 
+TableManagerTester.o: TableManagerTester.cc.o
+.PHONY : TableManagerTester.o
+
+# target to build an object file
+TableManagerTester.cc.o:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/TableManagerTester.cc.o
+.PHONY : TableManagerTester.cc.o
+
+TableManagerTester.i: TableManagerTester.cc.i
+.PHONY : TableManagerTester.i
+
+# target to preprocess a source file
+TableManagerTester.cc.i:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/TableManagerTester.cc.i
+.PHONY : TableManagerTester.cc.i
+
+TableManagerTester.s: TableManagerTester.cc.s
+.PHONY : TableManagerTester.s
+
+# target to generate assembly for a file
+TableManagerTester.cc.s:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/TableManagerTester.cc.s
+.PHONY : TableManagerTester.cc.s
+
 __/src/BitCompressedVector.o: __/src/BitCompressedVector.cc.o
 .PHONY : __/src/BitCompressedVector.o
 
@@ -235,6 +307,54 @@ __/src/BitCompressedVector.s: __/src/BitCompressedVector.cc.s
 __/src/BitCompressedVector.cc.s:
 	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.s
 .PHONY : __/src/BitCompressedVector.cc.s
+
+__/src/ColumnTable.o: __/src/ColumnTable.cc.o
+.PHONY : __/src/ColumnTable.o
+
+# target to build an object file
+__/src/ColumnTable.cc.o:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o
+.PHONY : __/src/ColumnTable.cc.o
+
+__/src/ColumnTable.i: __/src/ColumnTable.cc.i
+.PHONY : __/src/ColumnTable.i
+
+# target to preprocess a source file
+__/src/ColumnTable.cc.i:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/__/src/ColumnTable.cc.i
+.PHONY : __/src/ColumnTable.cc.i
+
+__/src/ColumnTable.s: __/src/ColumnTable.cc.s
+.PHONY : __/src/ColumnTable.s
+
+# target to generate assembly for a file
+__/src/ColumnTable.cc.s:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/__/src/ColumnTable.cc.s
+.PHONY : __/src/ColumnTable.cc.s
+
+__/src/DRowTable.o: __/src/DRowTable.cc.o
+.PHONY : __/src/DRowTable.o
+
+# target to build an object file
+__/src/DRowTable.cc.o:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/__/src/DRowTable.cc.o
+.PHONY : __/src/DRowTable.cc.o
+
+__/src/DRowTable.i: __/src/DRowTable.cc.i
+.PHONY : __/src/DRowTable.i
+
+# target to preprocess a source file
+__/src/DRowTable.cc.i:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/__/src/DRowTable.cc.i
+.PHONY : __/src/DRowTable.cc.i
+
+__/src/DRowTable.s: __/src/DRowTable.cc.s
+.PHONY : __/src/DRowTable.s
+
+# target to generate assembly for a file
+__/src/DRowTable.cc.s:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/__/src/DRowTable.cc.s
+.PHONY : __/src/DRowTable.cc.s
 
 __/src/IndexOffset.o: __/src/IndexOffset.cc.o
 .PHONY : __/src/IndexOffset.o
@@ -308,6 +428,30 @@ __/src/Logging.cc.s:
 	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/__/src/Logging.cc.s
 .PHONY : __/src/Logging.cc.s
 
+__/src/TableManager.o: __/src/TableManager.cc.o
+.PHONY : __/src/TableManager.o
+
+# target to build an object file
+__/src/TableManager.cc.o:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/__/src/TableManager.cc.o
+.PHONY : __/src/TableManager.cc.o
+
+__/src/TableManager.i: __/src/TableManager.cc.i
+.PHONY : __/src/TableManager.i
+
+# target to preprocess a source file
+__/src/TableManager.cc.i:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/__/src/TableManager.cc.i
+.PHONY : __/src/TableManager.cc.i
+
+__/src/TableManager.s: __/src/TableManager.cc.s
+.PHONY : __/src/TableManager.s
+
+# target to generate assembly for a file
+__/src/TableManager.cc.s:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/__/src/TableManager.cc.s
+.PHONY : __/src/TableManager.cc.s
+
 __/src/Timestamp.o: __/src/Timestamp.cc.o
 .PHONY : __/src/Timestamp.o
 
@@ -368,18 +512,33 @@ help:
 	@echo "... BitCompressedVectorTester.o"
 	@echo "... BitCompressedVectorTester.i"
 	@echo "... BitCompressedVectorTester.s"
+	@echo "... ColumnTableTester.o"
+	@echo "... ColumnTableTester.i"
+	@echo "... ColumnTableTester.s"
 	@echo "... DGroupKey.o"
 	@echo "... DGroupKey.i"
 	@echo "... DGroupKey.s"
+	@echo "... DRowTableTester.o"
+	@echo "... DRowTableTester.i"
+	@echo "... DRowTableTester.s"
 	@echo "... DictionaryTester.o"
 	@echo "... DictionaryTester.i"
 	@echo "... DictionaryTester.s"
 	@echo "... IndexOffsetTester.o"
 	@echo "... IndexOffsetTester.i"
 	@echo "... IndexOffsetTester.s"
+	@echo "... TableManagerTester.o"
+	@echo "... TableManagerTester.i"
+	@echo "... TableManagerTester.s"
 	@echo "... __/src/BitCompressedVector.o"
 	@echo "... __/src/BitCompressedVector.i"
 	@echo "... __/src/BitCompressedVector.s"
+	@echo "... __/src/ColumnTable.o"
+	@echo "... __/src/ColumnTable.i"
+	@echo "... __/src/ColumnTable.s"
+	@echo "... __/src/DRowTable.o"
+	@echo "... __/src/DRowTable.i"
+	@echo "... __/src/DRowTable.s"
 	@echo "... __/src/IndexOffset.o"
 	@echo "... __/src/IndexOffset.i"
 	@echo "... __/src/IndexOffset.s"
@@ -389,6 +548,9 @@ help:
 	@echo "... __/src/Logging.o"
 	@echo "... __/src/Logging.i"
 	@echo "... __/src/Logging.s"
+	@echo "... __/src/TableManager.o"
+	@echo "... __/src/TableManager.i"
+	@echo "... __/src/TableManager.s"
 	@echo "... __/src/Timestamp.o"
 	@echo "... __/src/Timestamp.i"
 	@echo "... __/src/Timestamp.s"

@@ -26,6 +26,36 @@ test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o
  ../include/Logging.h
  ../include/Timestamp.h
  /home/lin/GroupKey/test/BitCompressedVectorTester.cc
+test/CMakeFiles/main.dir/ColumnTableTester.cc.o
+ ../../gtest-1.7.0/include/gtest/gtest-death-test.h
+ ../../gtest-1.7.0/include/gtest/gtest-message.h
+ ../../gtest-1.7.0/include/gtest/gtest-param-test.h
+ ../../gtest-1.7.0/include/gtest/gtest-printers.h
+ ../../gtest-1.7.0/include/gtest/gtest-test-part.h
+ ../../gtest-1.7.0/include/gtest/gtest-typed-test.h
+ ../../gtest-1.7.0/include/gtest/gtest.h
+ ../../gtest-1.7.0/include/gtest/gtest_pred_impl.h
+ ../../gtest-1.7.0/include/gtest/gtest_prod.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-death-test-internal.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-filepath.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-internal.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-linked_ptr.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-param-util-generated.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-param-util.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-port.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-string.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-tuple.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-type-util.h
+ ../include/BitCompressedVector.h
+ ../include/ColumnTable.h
+ ../include/DGroupKey.h
+ ../include/Dictionary.h
+ ../include/IndexOffset.h
+ ../include/LogStream.h
+ ../include/Logging.h
+ ../include/RWMutex.h
+ ../include/Timestamp.h
+ /home/lin/GroupKey/test/ColumnTableTester.cc
 test/CMakeFiles/main.dir/DGroupKey.cc.o
  ../../gtest-1.7.0/include/gtest/gtest-death-test.h
  ../../gtest-1.7.0/include/gtest/gtest-message.h
@@ -55,6 +85,33 @@ test/CMakeFiles/main.dir/DGroupKey.cc.o
  ../include/RWMutex.h
  ../include/Timestamp.h
  /home/lin/GroupKey/test/DGroupKey.cc
+test/CMakeFiles/main.dir/DRowTableTester.cc.o
+ ../../gtest-1.7.0/include/gtest/gtest-death-test.h
+ ../../gtest-1.7.0/include/gtest/gtest-message.h
+ ../../gtest-1.7.0/include/gtest/gtest-param-test.h
+ ../../gtest-1.7.0/include/gtest/gtest-printers.h
+ ../../gtest-1.7.0/include/gtest/gtest-test-part.h
+ ../../gtest-1.7.0/include/gtest/gtest-typed-test.h
+ ../../gtest-1.7.0/include/gtest/gtest.h
+ ../../gtest-1.7.0/include/gtest/gtest_pred_impl.h
+ ../../gtest-1.7.0/include/gtest/gtest_prod.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-death-test-internal.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-filepath.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-internal.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-linked_ptr.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-param-util-generated.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-param-util.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-port.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-string.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-tuple.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-type-util.h
+ ../include/BitCompressedVector.h
+ ../include/DRowTable.h
+ ../include/LogStream.h
+ ../include/Logging.h
+ ../include/RWMutex.h
+ ../include/Timestamp.h
+ /home/lin/GroupKey/test/DRowTableTester.cc
 test/CMakeFiles/main.dir/DictionaryTester.cc.o
  ../../gtest-1.7.0/include/gtest/gtest-death-test.h
  ../../gtest-1.7.0/include/gtest/gtest-message.h
@@ -106,12 +163,63 @@ test/CMakeFiles/main.dir/IndexOffsetTester.cc.o
  ../include/Logging.h
  ../include/Timestamp.h
  /home/lin/GroupKey/test/IndexOffsetTester.cc
+test/CMakeFiles/main.dir/TableManagerTester.cc.o
+ ../../gtest-1.7.0/include/gtest/gtest-death-test.h
+ ../../gtest-1.7.0/include/gtest/gtest-message.h
+ ../../gtest-1.7.0/include/gtest/gtest-param-test.h
+ ../../gtest-1.7.0/include/gtest/gtest-printers.h
+ ../../gtest-1.7.0/include/gtest/gtest-test-part.h
+ ../../gtest-1.7.0/include/gtest/gtest-typed-test.h
+ ../../gtest-1.7.0/include/gtest/gtest.h
+ ../../gtest-1.7.0/include/gtest/gtest_pred_impl.h
+ ../../gtest-1.7.0/include/gtest/gtest_prod.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-death-test-internal.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-filepath.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-internal.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-linked_ptr.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-param-util-generated.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-param-util.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-port.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-string.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-tuple.h
+ ../../gtest-1.7.0/include/gtest/internal/gtest-type-util.h
+ ../include/BitCompressedVector.h
+ ../include/ColumnTable.h
+ ../include/DGroupKey.h
+ ../include/DRowTable.h
+ ../include/Dictionary.h
+ ../include/IndexOffset.h
+ ../include/LogStream.h
+ ../include/Logging.h
+ ../include/RWMutex.h
+ ../include/TableManager.h
+ ../include/Timestamp.h
+ /home/lin/GroupKey/test/TableManagerTester.cc
 test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o
  ../include/BitCompressedVector.h
  ../include/LogStream.h
  ../include/Logging.h
  ../include/Timestamp.h
  /home/lin/GroupKey/src/BitCompressedVector.cc
+test/CMakeFiles/main.dir/__/src/ColumnTable.cc.o
+ ../include/BitCompressedVector.h
+ ../include/ColumnTable.h
+ ../include/DGroupKey.h
+ ../include/Dictionary.h
+ ../include/IndexOffset.h
+ ../include/LogStream.h
+ ../include/Logging.h
+ ../include/RWMutex.h
+ ../include/Timestamp.h
+ /home/lin/GroupKey/src/ColumnTable.cc
+test/CMakeFiles/main.dir/__/src/DRowTable.cc.o
+ ../include/BitCompressedVector.h
+ ../include/DRowTable.h
+ ../include/LogStream.h
+ ../include/Logging.h
+ ../include/RWMutex.h
+ ../include/Timestamp.h
+ /home/lin/GroupKey/src/DRowTable.cc
 test/CMakeFiles/main.dir/__/src/IndexOffset.cc.o
  ../include/BitCompressedVector.h
  ../include/IndexOffset.h
@@ -127,6 +235,19 @@ test/CMakeFiles/main.dir/__/src/Logging.cc.o
  ../include/Logging.h
  ../include/Timestamp.h
  /home/lin/GroupKey/src/Logging.cc
+test/CMakeFiles/main.dir/__/src/TableManager.cc.o
+ ../include/BitCompressedVector.h
+ ../include/ColumnTable.h
+ ../include/DGroupKey.h
+ ../include/DRowTable.h
+ ../include/Dictionary.h
+ ../include/IndexOffset.h
+ ../include/LogStream.h
+ ../include/Logging.h
+ ../include/RWMutex.h
+ ../include/TableManager.h
+ ../include/Timestamp.h
+ /home/lin/GroupKey/src/TableManager.cc
 test/CMakeFiles/main.dir/__/src/Timestamp.cc.o
  ../include/Timestamp.h
  /home/lin/GroupKey/src/Timestamp.cc

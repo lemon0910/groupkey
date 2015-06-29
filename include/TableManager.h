@@ -1,27 +1,26 @@
 #ifndef TABLEMANAGER_H
 #define TABLEMANAGER_H
 
-#include <common/sys/Singleton.h>
-#include "ColumnTable.h"
-#include "DRowTable.h"
+#include <ColumnTable.h>
+#include <DRowTable.h>
 #include <string>
 
-class TableManager : Singleton<TableManager>
+class TableManager
 {
-public:
-
+private:
 	TableManager();
 	virtual ~TableManager();
-	friend class Singleton<TableManager>;
-	void createColumnTable(string tableName);
-	ColumnTable* getColumnTable(string tableName);
-	void createDRowTable(size_t attributeCount, string tableName, uint64_t base);
-	DRowTable* getDRowTable(string tableName);
+public:
+	void createColumnTable(const std::string tableName);
+	ColumnTable* getColumnTable(const std::string tableName);
+	void createDRowTable(size_t attributeCount, const std::string tableName, uint64_t base);
+	DRowTable* getDRowTable(const std::string tableName);
+    static TableManager* getInstance();
 
 private:
-
-	vector<ColumnTable*> m_columnTable;
-	vector<DRowTable*> m_dRowTable;
+    static TableManager *pTableManager;
+    std::vector<ColumnTable*> m_columnTable;
+    std::vector<DRowTable*> m_dRowTable;
 };
 
 #endif
