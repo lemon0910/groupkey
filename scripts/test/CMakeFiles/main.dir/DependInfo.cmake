@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/lin/GroupKey/test/BitCompressedVectorTester.cc" "/home/lin/GroupKey/scripts/test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o"
   "/home/lin/GroupKey/test/ColumnTableTester.cc" "/home/lin/GroupKey/scripts/test/CMakeFiles/main.dir/ColumnTableTester.cc.o"
-  "/home/lin/GroupKey/test/DGroupKey.cc" "/home/lin/GroupKey/scripts/test/CMakeFiles/main.dir/DGroupKey.cc.o"
+  "/home/lin/GroupKey/test/DGroupKeyTester.cc" "/home/lin/GroupKey/scripts/test/CMakeFiles/main.dir/DGroupKeyTester.cc.o"
   "/home/lin/GroupKey/test/DRowTableTester.cc" "/home/lin/GroupKey/scripts/test/CMakeFiles/main.dir/DRowTableTester.cc.o"
   "/home/lin/GroupKey/test/DictionaryTester.cc" "/home/lin/GroupKey/scripts/test/CMakeFiles/main.dir/DictionaryTester.cc.o"
   "/home/lin/GroupKey/test/IndexOffsetTester.cc" "/home/lin/GroupKey/scripts/test/CMakeFiles/main.dir/IndexOffsetTester.cc.o"

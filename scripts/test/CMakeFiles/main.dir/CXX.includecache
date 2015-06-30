@@ -452,7 +452,7 @@ gtest/gtest.h
 ColumnTable.h
 -
 
-/home/lin/GroupKey/test/DGroupKey.cc
+/home/lin/GroupKey/test/DGroupKeyTester.cc
 gtest/gtest.h
 -
 DGroupKey.h

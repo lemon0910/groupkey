@@ -72,32 +72,9 @@ test/CMakeFiles/main.dir/TableManagerTester.cc.o.provides: test/CMakeFiles/main.
 
 test/CMakeFiles/main.dir/TableManagerTester.cc.o.provides.build: test/CMakeFiles/main.dir/TableManagerTester.cc.o
 
-test/CMakeFiles/main.dir/DGroupKey.cc.o: test/CMakeFiles/main.dir/flags.make
-test/CMakeFiles/main.dir/DGroupKey.cc.o: ../test/DGroupKey.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/DGroupKey.cc.o"
-	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/DGroupKey.cc.o -c /home/lin/GroupKey/test/DGroupKey.cc
-
-test/CMakeFiles/main.dir/DGroupKey.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/DGroupKey.cc.i"
-	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lin/GroupKey/test/DGroupKey.cc > CMakeFiles/main.dir/DGroupKey.cc.i
-
-test/CMakeFiles/main.dir/DGroupKey.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/DGroupKey.cc.s"
-	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lin/GroupKey/test/DGroupKey.cc -o CMakeFiles/main.dir/DGroupKey.cc.s
-
-test/CMakeFiles/main.dir/DGroupKey.cc.o.requires:
-.PHONY : test/CMakeFiles/main.dir/DGroupKey.cc.o.requires
-
-test/CMakeFiles/main.dir/DGroupKey.cc.o.provides: test/CMakeFiles/main.dir/DGroupKey.cc.o.requires
-	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/DGroupKey.cc.o.provides.build
-.PHONY : test/CMakeFiles/main.dir/DGroupKey.cc.o.provides
-
-test/CMakeFiles/main.dir/DGroupKey.cc.o.provides.build: test/CMakeFiles/main.dir/DGroupKey.cc.o
-
 test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o: ../test/BitCompressedVectorTester.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/BitCompressedVectorTester.cc.o -c /home/lin/GroupKey/test/BitCompressedVectorTester.cc
 
@@ -120,7 +97,7 @@ test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o.provides.build: test/CMa
 
 test/CMakeFiles/main.dir/DRowTableTester.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/DRowTableTester.cc.o: ../test/DRowTableTester.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/DRowTableTester.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/DRowTableTester.cc.o -c /home/lin/GroupKey/test/DRowTableTester.cc
 
@@ -143,7 +120,7 @@ test/CMakeFiles/main.dir/DRowTableTester.cc.o.provides.build: test/CMakeFiles/ma
 
 test/CMakeFiles/main.dir/IndexOffsetTester.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/IndexOffsetTester.cc.o: ../test/IndexOffsetTester.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/IndexOffsetTester.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/IndexOffsetTester.cc.o -c /home/lin/GroupKey/test/IndexOffsetTester.cc
 
@@ -166,7 +143,7 @@ test/CMakeFiles/main.dir/IndexOffsetTester.cc.o.provides.build: test/CMakeFiles/
 
 test/CMakeFiles/main.dir/ColumnTableTester.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/ColumnTableTester.cc.o: ../test/ColumnTableTester.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/ColumnTableTester.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/ColumnTableTester.cc.o -c /home/lin/GroupKey/test/ColumnTableTester.cc
 
@@ -189,7 +166,7 @@ test/CMakeFiles/main.dir/ColumnTableTester.cc.o.provides.build: test/CMakeFiles/
 
 test/CMakeFiles/main.dir/DictionaryTester.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/DictionaryTester.cc.o: ../test/DictionaryTester.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/DictionaryTester.cc.o"
 	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/DictionaryTester.cc.o -c /home/lin/GroupKey/test/DictionaryTester.cc
 
@@ -209,6 +186,29 @@ test/CMakeFiles/main.dir/DictionaryTester.cc.o.provides: test/CMakeFiles/main.di
 .PHONY : test/CMakeFiles/main.dir/DictionaryTester.cc.o.provides
 
 test/CMakeFiles/main.dir/DictionaryTester.cc.o.provides.build: test/CMakeFiles/main.dir/DictionaryTester.cc.o
+
+test/CMakeFiles/main.dir/DGroupKeyTester.cc.o: test/CMakeFiles/main.dir/flags.make
+test/CMakeFiles/main.dir/DGroupKeyTester.cc.o: ../test/DGroupKeyTester.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lin/GroupKey/scripts/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/main.dir/DGroupKeyTester.cc.o"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main.dir/DGroupKeyTester.cc.o -c /home/lin/GroupKey/test/DGroupKeyTester.cc
+
+test/CMakeFiles/main.dir/DGroupKeyTester.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/DGroupKeyTester.cc.i"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lin/GroupKey/test/DGroupKeyTester.cc > CMakeFiles/main.dir/DGroupKeyTester.cc.i
+
+test/CMakeFiles/main.dir/DGroupKeyTester.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/DGroupKeyTester.cc.s"
+	cd /home/lin/GroupKey/scripts/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lin/GroupKey/test/DGroupKeyTester.cc -o CMakeFiles/main.dir/DGroupKeyTester.cc.s
+
+test/CMakeFiles/main.dir/DGroupKeyTester.cc.o.requires:
+.PHONY : test/CMakeFiles/main.dir/DGroupKeyTester.cc.o.requires
+
+test/CMakeFiles/main.dir/DGroupKeyTester.cc.o.provides: test/CMakeFiles/main.dir/DGroupKeyTester.cc.o.requires
+	$(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/DGroupKeyTester.cc.o.provides.build
+.PHONY : test/CMakeFiles/main.dir/DGroupKeyTester.cc.o.provides
+
+test/CMakeFiles/main.dir/DGroupKeyTester.cc.o.provides.build: test/CMakeFiles/main.dir/DGroupKeyTester.cc.o
 
 test/CMakeFiles/main.dir/main.cc.o: test/CMakeFiles/main.dir/flags.make
 test/CMakeFiles/main.dir/main.cc.o: ../test/main.cc
@@ -420,12 +420,12 @@ test/CMakeFiles/main.dir/__/src/TableManager.cc.o.provides.build: test/CMakeFile
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/TableManagerTester.cc.o" \
-"CMakeFiles/main.dir/DGroupKey.cc.o" \
 "CMakeFiles/main.dir/BitCompressedVectorTester.cc.o" \
 "CMakeFiles/main.dir/DRowTableTester.cc.o" \
 "CMakeFiles/main.dir/IndexOffsetTester.cc.o" \
 "CMakeFiles/main.dir/ColumnTableTester.cc.o" \
 "CMakeFiles/main.dir/DictionaryTester.cc.o" \
+"CMakeFiles/main.dir/DGroupKeyTester.cc.o" \
 "CMakeFiles/main.dir/main.cc.o" \
 "CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o" \
 "CMakeFiles/main.dir/__/src/Logging.cc.o" \
@@ -440,12 +440,12 @@ main_OBJECTS = \
 main_EXTERNAL_OBJECTS =
 
 test/main: test/CMakeFiles/main.dir/TableManagerTester.cc.o
-test/main: test/CMakeFiles/main.dir/DGroupKey.cc.o
 test/main: test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o
 test/main: test/CMakeFiles/main.dir/DRowTableTester.cc.o
 test/main: test/CMakeFiles/main.dir/IndexOffsetTester.cc.o
 test/main: test/CMakeFiles/main.dir/ColumnTableTester.cc.o
 test/main: test/CMakeFiles/main.dir/DictionaryTester.cc.o
+test/main: test/CMakeFiles/main.dir/DGroupKeyTester.cc.o
 test/main: test/CMakeFiles/main.dir/main.cc.o
 test/main: test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o
 test/main: test/CMakeFiles/main.dir/__/src/Logging.cc.o
@@ -465,12 +465,12 @@ test/CMakeFiles/main.dir/build: test/main
 .PHONY : test/CMakeFiles/main.dir/build
 
 test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/TableManagerTester.cc.o.requires
-test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/DGroupKey.cc.o.requires
 test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/BitCompressedVectorTester.cc.o.requires
 test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/DRowTableTester.cc.o.requires
 test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/IndexOffsetTester.cc.o.requires
 test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/ColumnTableTester.cc.o.requires
 test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/DictionaryTester.cc.o.requires
+test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/DGroupKeyTester.cc.o.requires
 test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/main.cc.o.requires
 test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/__/src/BitCompressedVector.cc.o.requires
 test/CMakeFiles/main.dir/requires: test/CMakeFiles/main.dir/__/src/Logging.cc.o.requires

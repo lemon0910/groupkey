@@ -164,29 +164,29 @@ ColumnTableTester.cc.s:
 	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/ColumnTableTester.cc.s
 .PHONY : ColumnTableTester.cc.s
 
-DGroupKey.o: DGroupKey.cc.o
-.PHONY : DGroupKey.o
+DGroupKeyTester.o: DGroupKeyTester.cc.o
+.PHONY : DGroupKeyTester.o
 
 # target to build an object file
-DGroupKey.cc.o:
-	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/DGroupKey.cc.o
-.PHONY : DGroupKey.cc.o
+DGroupKeyTester.cc.o:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/DGroupKeyTester.cc.o
+.PHONY : DGroupKeyTester.cc.o
 
-DGroupKey.i: DGroupKey.cc.i
-.PHONY : DGroupKey.i
+DGroupKeyTester.i: DGroupKeyTester.cc.i
+.PHONY : DGroupKeyTester.i
 
 # target to preprocess a source file
-DGroupKey.cc.i:
-	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/DGroupKey.cc.i
-.PHONY : DGroupKey.cc.i
+DGroupKeyTester.cc.i:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/DGroupKeyTester.cc.i
+.PHONY : DGroupKeyTester.cc.i
 
-DGroupKey.s: DGroupKey.cc.s
-.PHONY : DGroupKey.s
+DGroupKeyTester.s: DGroupKeyTester.cc.s
+.PHONY : DGroupKeyTester.s
 
 # target to generate assembly for a file
-DGroupKey.cc.s:
-	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/DGroupKey.cc.s
-.PHONY : DGroupKey.cc.s
+DGroupKeyTester.cc.s:
+	cd /home/lin/GroupKey/scripts && $(MAKE) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/DGroupKeyTester.cc.s
+.PHONY : DGroupKeyTester.cc.s
 
 DRowTableTester.o: DRowTableTester.cc.o
 .PHONY : DRowTableTester.o
@@ -515,9 +515,9 @@ help:
 	@echo "... ColumnTableTester.o"
 	@echo "... ColumnTableTester.i"
 	@echo "... ColumnTableTester.s"
-	@echo "... DGroupKey.o"
-	@echo "... DGroupKey.i"
-	@echo "... DGroupKey.s"
+	@echo "... DGroupKeyTester.o"
+	@echo "... DGroupKeyTester.i"
+	@echo "... DGroupKeyTester.s"
 	@echo "... DRowTableTester.o"
 	@echo "... DRowTableTester.i"
 	@echo "... DRowTableTester.s"
