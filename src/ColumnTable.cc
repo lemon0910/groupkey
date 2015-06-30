@@ -29,6 +29,8 @@ ColumnTable::~ColumnTable()
 				delete double_ptr;
 			}
             break;
+            case INVALID:
+            break;
 		}
 	}
 	m_columns.clear();
@@ -44,7 +46,12 @@ void ColumnTable::insertOneDGroupKey(void* insertPtr, std::string columnName, co
 
 std::pair<void*, Type> ColumnTable::getOneDGroupKey(const std::string columnName)
 {
-	uint64_t pos = getPos(columnName);
+	int pos = getPos(columnName);
+    if(-1 == pos)
+    {
+        return std::make_pair((void*)NULL, INVALID);
+    }
+
 	void* result_ptr = m_columns[pos];
 	Type result_type = m_indexVector[pos].second;
 	return std::make_pair(result_ptr, result_type);
@@ -109,6 +116,8 @@ void ColumnTable::print()
 				DGroupKey<double>* double_ptr = (DGroupKey<double>*)m_columns[i];
 				double_ptr->print();
 			}
+            break;
+            case INVALID:
             break;
 		}
 		LOG_INFO << "+++++++++++++++++++++++++++++++++";

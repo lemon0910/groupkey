@@ -18,6 +18,12 @@ void DRowTable::fillOneColumn(const string columnName, const uint64_t& itemCount
 
 vectorptr DRowTable::getValue(const string columnName, const vector<uint64_t>& rowID)
 {
+    int index = caculatePos(columnName);
+    if(index == -1)
+    {
+        return vectorptr();
+    }
+
 	BitCompressedVector& value = m_attributeVector[caculatePos(columnName)];
 	vectorptr result(new vector<uint64_t>());
 	for(vector<uint64_t>::const_iterator itr = rowID.begin(); itr != rowID.end(); itr++)

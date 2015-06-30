@@ -23,7 +23,7 @@ BitCompressedVector::BitCompressedVector(const BitCompressedVector& other)
 	m_bitForItem = other.m_bitForItem;
 	m_size = other.m_size;
 	m_rowCount = other.m_rowCount;
-	m_currentRow = 0;
+	m_currentRow = other.m_currentRow;
 	m_blockNumber = other.m_blockNumber;
 
 	m_pData = allocMemory(m_blockNumber);
@@ -38,7 +38,7 @@ BitCompressedVector& BitCompressedVector::operator=(const BitCompressedVector& o
 	m_bitForItem = other.m_bitForItem;
 	m_size = other.m_size;
 	m_rowCount = other.m_rowCount;
-	m_currentRow = 0;
+	m_currentRow = other.m_currentRow;
 	m_blockNumber = other.m_blockNumber;
 
 	storage_unit_t* newData;

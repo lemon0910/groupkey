@@ -19,6 +19,12 @@ struct RawData
     T data;
     uint64_t rownumber;
 
+    RawData(T value, uint64_t num)
+    {
+        data = value;
+        rownumber = num;
+    }
+
     bool operator<(const RawData b) const
     {
         if(data != b.data)

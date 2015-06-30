@@ -48,12 +48,17 @@ TEST(DRowTable, update)
     rowtable.fillOneColumn("column1", 1000, temp);
     std::vector<uint64_t> value;
     for(uint64_t i = 0; i < 1000; ++i)
+    {
         value.push_back(i + 2008);
+        temp.push_back(i + 1000);
+    }
 
     rowtable.updateOneColumn("column1", 1000, value);
     vectorptr result = rowtable.getValue("column1", temp);
     for(uint64_t i = 0; i < 1000; ++i)
-        ASSERT_EQ(i + 2008, (*result)[i]);
+        ASSERT_EQ(i, (*result)[i]);
+    for(uint64_t i = 1000; i < 2000; ++i)
+        ASSERT_EQ(i - 1000 + 2008, (*result)[i]);
 }
 
 TEST(DRowTable, refresh)

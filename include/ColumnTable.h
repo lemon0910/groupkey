@@ -6,7 +6,7 @@
 #include <DGroupKey.h>
 #include <RWMutex.h>
 
-enum Type{STRINGTYPE, INTTYPE, DOUBLETYPE};
+enum Type{STRINGTYPE, INTTYPE, DOUBLETYPE, INVALID};
 
 class ColumnTable
 {
@@ -24,7 +24,7 @@ public:
     std::string getTableName();
     void print();
 
-    inline uint64_t getPos(std::string columnName)//precise search, if not exist, return -1
+    inline int getPos(std::string columnName)//precise search, if not exist, return -1
     {
         for(vector_t::iterator itr = m_indexVector.begin(); itr != m_indexVector.end();
             itr++)
