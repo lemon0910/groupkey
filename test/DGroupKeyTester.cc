@@ -27,6 +27,7 @@ TEST(DGroupKey, construct)
     ASSERT_EQ(0, pIndex->get(0));
     ASSERT_EQ(1, pIndex->get(1));
     ASSERT_EQ(3, pIndex->get(2));
+    ASSERT_EQ(4, pIndex->get(3));
 
     ASSERT_EQ(1, pPosition->get(0));
     ASSERT_EQ(2, pPosition->get(1));
@@ -53,6 +54,7 @@ TEST(DGroupKey, insertUpdatedData)
     IndexOffset* otherOffset = new IndexOffset();
     otherOffset->push_back(0);
     otherOffset->push_back(1);
+    otherOffset->push_back(3);
 
     BitCompressedVector* otherPosition = new BitCompressedVector(10);
     otherPosition->push_back(1);
@@ -78,14 +80,39 @@ TEST(DGroupKey, insertUpdatedData)
 
     ASSERT_EQ(0, pIndex->get(0));
     ASSERT_EQ(2, pIndex->get(1));
-    ASSERT_EQ(3, pIndex->get(2));
-    ASSERT_EQ(5, pIndex->get(3));
+    ASSERT_EQ(4, pIndex->get(2));
+    ASSERT_EQ(6, pIndex->get(3));
+    ASSERT_EQ(7, pIndex->get(4));
 
     ASSERT_EQ(1, pPosition->get(0));
     ASSERT_EQ(5, pPosition->get(1));
     ASSERT_EQ(2, pPosition->get(2));
-    ASSERT_EQ(6, pPosition->get(3));
-    ASSERT_EQ(7, pPosition->get(4));
-    ASSERT_EQ(3, pPosition->get(5));
+    ASSERT_EQ(3, pPosition->get(3));
+    ASSERT_EQ(6, pPosition->get(4));
+    ASSERT_EQ(7, pPosition->get(5));
     ASSERT_EQ(4, pPosition->get(6));
+
+    boost::shared_ptr<std::vector<uint64_t> > result = groupkey.getRangeRowKeyByPos(1, 2);
+
+    ASSERT_EQ(2, (*result)[0]);
+    ASSERT_EQ(3, (*result)[1]);
+    ASSERT_EQ(6, (*result)[2]);
+    ASSERT_EQ(7, (*result)[3]);
+
+    result.reset();
+    result = groupkey.getRowKeyByPos(0);
+    ASSERT_EQ(1, (*result)[0]);
+    ASSERT_EQ(5, (*result)[1]);
+
+    std::vector<uint64_t> dicid;
+    dicid.push_back(1);
+    dicid.push_back(2);
+
+    boost::shared_ptr<std::vector<int> > dic = groupkey.getDicValue(dicid);
+    ASSERT_EQ(12, (*dic)[0]);
+    ASSERT_EQ(17, (*dic)[1]);
+
+    delete otherDictionary;
+    delete otherOffset;
+    delete otherPosition;
 }

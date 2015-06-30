@@ -379,7 +379,7 @@ public:
 
     vectorptr getRangeRowKeyByPos(uint64_t floor, uint64_t ceiling)
     {
-        vectorptr result;
+        vectorptr result(new std::vector<uint64_t>);
         uint64_t offsetFloorPos = m_offset->get(floor);
         uint64_t offsetCeilingPos = m_offset->get(ceiling + 1); // need to plus 1
         for(uint64_t i = offsetFloorPos; i < offsetCeilingPos; i++)
@@ -398,7 +398,7 @@ public:
     {
         floor = floor - m_base;
         ceiling = ceiling - m_base;
-        vectorptr result;
+        vectorptr result(new std::vector<uint64_t>);
         uint64_t offsetFloorPos = m_offset->get(floor);
         uint64_t offsetCeilingPos = m_offset->get(ceiling + 1);
         for(uint64_t i = offsetFloorPos; i < offsetCeilingPos; i++)
@@ -415,7 +415,7 @@ public:
 
     boost::shared_ptr<std::vector<T> > getDicValue(std::vector<uint64_t> &dicId)
     {
-        boost::shared_ptr<std::vector<T> > result;
+        boost::shared_ptr<std::vector<T> > result(new std::vector<T>);
         for(auto itr = dicId.begin(); itr != dicId.end(); itr++)
             result->push_back(m_dictionary->get(*itr - m_base));
         return result;
