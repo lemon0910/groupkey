@@ -62,7 +62,7 @@ public:
         delete m_position;
     }
 
-    void constructThreeVector(std::vector<RawData<T> >& rawData)
+    void constructThreeVector(std::vector<RawData<T> > rawData)
     {
         std::sort(rawData.begin(), rawData.end());
         m_offset->push_back(0);
