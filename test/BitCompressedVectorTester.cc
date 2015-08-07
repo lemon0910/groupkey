@@ -33,9 +33,9 @@ TEST(BitCompressedVector, setAndGet)
 
 TEST(BitCompressedVector, reSizeAndGetRange)
 {
-    BitCompressedVector v(2);
+    BitCompressedVector v(10000000);
 
-    for(uint64_t i = 0; i < 10000000; ++i)
+    for(uint64_t i = 100000000; i < 110000000; ++i)
     {
         v.push_back(i);
         //ASSERT_EQ(i, v.get(i));
@@ -43,13 +43,13 @@ TEST(BitCompressedVector, reSizeAndGetRange)
 
     for(uint64_t i = 0; i < 10000000; ++i)
     {
-        ASSERT_EQ(i, v.get(i));
+        ASSERT_EQ(i + 100000000, v.get(i));
     }
 
     std::vector<uint64_t> result = v.getRange(500, 500000);
     for(uint64_t i = 500; i <= 500000; ++i)
     {
-        ASSERT_EQ(i, result[i - 500]);
+        ASSERT_EQ(i + 100000000, result[i - 500]);
     }
 
 }
