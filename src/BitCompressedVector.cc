@@ -161,14 +161,17 @@ void BitCompressedVector::resetBitForItem(uint64_t value)
 
 void BitCompressedVector::set(uint64_t rowID, uint64_t value)
 {
-	if(!checkSize(rowID + 1))
-		resize(rowID + 10000);
+	//if(!checkSize(rowID + 1))
+	//	resize(rowID + 10000);
 
 	uint64_t maxvalue = maxValue();
 	if(m_bitForItem != 64 && value > maxvalue)
 	{
 		resetBitForItem(value);
 	}
+
+    if(!checkSize(rowID + 100))
+        resize(rowID + 10000);
 
 	uint64_t offset = blockOffset(rowID);
 	uint64_t block = blockPosition(rowID);
