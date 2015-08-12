@@ -36,6 +36,10 @@ public:
     }
 
 private:
+    void pushBackIndex(std::pair<std::string, Type> value);
+    void pushBackColumn(void* ptr);
+
+private:
 
     std::string m_tableName;
     std::vector<void*> m_columns;

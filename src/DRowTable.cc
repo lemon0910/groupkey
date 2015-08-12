@@ -12,8 +12,9 @@ void DRowTable::fillOneColumn(const string columnName, const uint64_t& itemCount
 	BitCompressedVector newVector(itemCount);
 	for(uint64_t i = 0; i < itemCount; i++)
 		newVector.push_back(value[i]);
-	m_attributeVector.push_back(newVector);
-	m_columnVector.push_back(columnName);
+
+    pushBackAttribute(newVector);
+    pushBackColumn(columnName);
 }
 
 vectorptr DRowTable::getValue(const string columnName, const vector<uint64_t>& rowID)
@@ -89,4 +90,24 @@ void DRowTable::refresh(const string columnName, const vector<uint64_t>& xVector
 		uint64_t increment = xVector[former];
 		m_attributeVector[pos].set(i, former + increment);
 	}
+}
+
+void DRowTable::pushBackAttribute(BitCompressedVector& v)
+{
+    int64_t len = m_attributeVector.size();
+    int64_t capacity = m_attributeVector.capacity();
+    if(capacity - len < 10)
+        m_attributeVector.reserve(capacity + 10000);
+
+    m_attributeVector.push_back(v);
+}
+
+void DRowTable::pushBackColumn(std::string str)
+{
+    int64_t len = m_columnVector.size();
+    int64_t capacity = m_columnVector.capacity();
+    if(capacity - len < 10)
+        m_columnVector.reserve(capacity + 10000);
+
+    m_columnVector.push_back(str);
 }

@@ -18,6 +18,10 @@ class Dictionary{
 
 	    void push_back(T value)
         {
+            int len = m_dicVector.size();
+            int capacity = m_dicVector.capacity();
+            if(capacity - len < 10)
+                m_dicVector.reserve(capacity + 10000);
             m_dicVector.push_back(value);
         }
 

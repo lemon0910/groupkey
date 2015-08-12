@@ -33,7 +33,7 @@ TableManager::~TableManager()
 void TableManager::createColumnTable(const string tableName)
 {
 	ColumnTable* newTable = new ColumnTable(tableName);
-	m_columnTable.push_back(newTable);
+    pushBackColumn(newTable);
 }
 
 ColumnTable* TableManager::getColumnTable(const string tableName)
@@ -51,7 +51,7 @@ ColumnTable* TableManager::getColumnTable(const string tableName)
 void TableManager::createDRowTable(size_t attributeCount, const string tableName, uint64_t base)
 {
 	DRowTable* newTable = new DRowTable(attributeCount, tableName, base);
-	m_dRowTable.push_back(newTable);
+    pushBackRow(newTable);
 }
 
 DRowTable* TableManager::getDRowTable(const string tableName)
@@ -64,4 +64,24 @@ DRowTable* TableManager::getDRowTable(const string tableName)
 		}
 	}
 	return NULL;
+}
+
+void TableManager::pushBackColumn(ColumnTable* pTable)
+{
+    int64_t len = m_columnTable.size();
+    int64_t capacity = m_columnTable.capacity();
+    if(capacity - len < 10)
+        m_columnTable.reserve(capacity + 10000);
+
+    m_columnTable.push_back(pTable);
+}
+
+void TableManager::pushBackRow(DRowTable* pTable)
+{
+    int64_t len = m_dRowTable.size();
+    int64_t capacity = m_dRowTable.capacity();
+    if(capacity - len < 10)
+        m_dRowTable.reserve(capacity + 100000);
+
+    m_dRowTable.push_back(pTable);
 }

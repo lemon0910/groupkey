@@ -33,15 +33,15 @@ TEST(BitCompressedVector, setAndGet)
 
 TEST(BitCompressedVector, reSizeAndGetRange)
 {
-    BitCompressedVector v(10000000);
+    BitCompressedVector v(1000000);
 
-    for(uint64_t i = 0; i < 110000000; ++i)
+    for(uint64_t i = 0; i < 1000000; ++i)
     {
         v.push_back(i);
         //ASSERT_EQ(i, v.get(i));
     }
 
-    for(uint64_t i = 0; i < 110000000; ++i)
+    for(uint64_t i = 0; i < 1000000; ++i)
     {
         ASSERT_EQ(i, v.get(i));
     }
@@ -53,14 +53,4 @@ TEST(BitCompressedVector, reSizeAndGetRange)
     }
 
     v.clear();
-    for(uint64_t i = 100000000; i < 110000000; ++i)
-    {
-        v.push_back(i);
-    }
-
-    for(uint64_t i = 0; i < 10000000; ++i)
-    {
-        ASSERT_EQ(i + 100000000, v.get(i));
-    }
-
 }

@@ -18,6 +18,10 @@ public:
     static TableManager* getInstance();
 
 private:
+    void pushBackColumn(ColumnTable* pTable);
+    void pushBackRow(DRowTable* pTable);
+
+private:
     static TableManager *pTableManager;
     std::vector<ColumnTable*> m_columnTable;
     std::vector<DRowTable*> m_dRowTable;

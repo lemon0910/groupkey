@@ -40,8 +40,8 @@ ColumnTable::~ColumnTable()
 void ColumnTable::insertOneDGroupKey(void* insertPtr, std::string columnName, const Type type)
 {
     RWMutexLockGuard tmpLock(_mutex , WRITE);
-	m_columns.push_back(insertPtr);
-	m_indexVector.push_back(make_pair(columnName, type));
+    pushBackColumn(insertPtr);
+    pushBackIndex(make_pair(columnName, type));
 }
 
 std::pair<void*, Type> ColumnTable::getOneDGroupKey(const std::string columnName)
@@ -122,4 +122,24 @@ void ColumnTable::print()
 		}
 		LOG_INFO << "+++++++++++++++++++++++++++++++++";
 	}
+}
+
+void ColumnTable::pushBackIndex(std::pair<std::string, Type> value)
+{
+    int64_t len = m_indexVector.size();
+    int64_t capacity = m_indexVector.capacity();
+    if(capacity - len < 10)
+        m_indexVector.reserve(capacity + 10000);
+
+    m_indexVector.push_back(value);
+}
+
+void ColumnTable::pushBackColumn(void* ptr)
+{
+    int64_t len = m_columns.size();
+    int64_t capacity = m_columns.capacity();
+    if(capacity - len < 10)
+        m_columns.reserve(capacity + 10000);
+
+    m_columns.push_back(ptr);
 }

@@ -46,6 +46,9 @@ private:
 			return std::distance(m_columnVector.begin(), itr);
 	}
 
+    void pushBackAttribute(BitCompressedVector& v);
+    void pushBackColumn(std::string str);
+
 private:
 
 	uint64_t m_attributeCount;
