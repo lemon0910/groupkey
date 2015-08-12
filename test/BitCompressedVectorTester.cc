@@ -52,4 +52,15 @@ TEST(BitCompressedVector, reSizeAndGetRange)
         ASSERT_EQ(i, result[i - 500]);
     }
 
+    v.clear();
+    for(uint64_t i = 100000000; i < 110000000; ++i)
+    {
+        v.push_back(i);
+    }
+
+    for(uint64_t i = 0; i < 10000000; ++i)
+    {
+        ASSERT_EQ(i + 100000000, v.get(i));
+    }
+
 }
